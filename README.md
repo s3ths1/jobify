@@ -1,7 +1,7 @@
 <div align="center">
 
-<a href="https://theseriff.github.io/jobify/">
-  <img src="https://raw.githubusercontent.com/theseriff/jobify/main/docs/images/logo.svg" alt="Jobify logo" width="140">
+<a href="https://s3ths1.github.io/jobify/">
+  <img src="https://raw.githubusercontent.com/s3ths1/jobify/main/docs/images/logo.svg" alt="Jobify logo" width="140">
 </a>
 
 <h1>Jobify</h1>
@@ -10,12 +10,12 @@
 
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/jobify.svg)](https://pypi.org/project/jobify)
 [![PyPI version](https://badge.fury.io/py/jobify.svg)](https://pypi.python.org/pypi/jobify)
-[![Tests](https://github.com/theseriff/jobify/actions/workflows/pr_tests.yml/badge.svg)](https://github.com/theseriff/jobify/actions/workflows/pr_tests.yml)
-[![Coverage](https://coverage-badge.samuelcolvin.workers.dev/theseriff/jobify.svg)](https://coverage-badge.samuelcolvin.workers.dev/redirect/theseriff/jobify)
-[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://codspeed.io/theseriff/jobify?utm_source=badge)
+[![Tests](https://github.com/s3ths1/jobify/actions/workflows/pr_tests.yml/badge.svg)](https://github.com/s3ths1/jobify/actions/workflows/pr_tests.yml)
+[![Coverage](https://coverage-badge.samuelcolvin.workers.dev/s3ths1/jobify.svg)](https://coverage-badge.samuelcolvin.workers.dev/redirect/s3ths1/jobify)
+[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://codspeed.io/s3ths1/jobify?utm_source=badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[**Documentation**](https://theseriff.github.io/jobify/) •
+[**Documentation**](https://s3ths1.github.io/jobify/) •
 [**Quick Start**](#quick-start) •
 [**Community Extensions**](https://github.com/Jobify-Community) •
 [**Telegram**](https://t.me/jobify_community)
@@ -29,7 +29,7 @@
 - [Quick Start](#quick-start)
 - [Key Features](#key-features)
 - [When to Choose Jobify](#when-to-choose-jobify)
-- [Roadmap](https://github.com/theseriff/jobify/issues/107)
+- [Roadmap](https://github.com/s3ths1/jobify/issues/107)
 - [License](#license)
 
 ## Why Jobify
@@ -40,7 +40,7 @@ Most Python schedulers rely on polling loops. Jobify uses low-level `asyncio` ti
 - **Sub-millisecond trigger precision**
 - **Native async-first execution model**
 
-If your workload is bursty or downstream services are sensitive, use [Queue Middleware](https://theseriff.github.io/jobify/advanced_usage/queue/) to add bounded buffering, backpressure, and priority routing.
+If your workload is bursty or downstream services are sensitive, use [Queue Middleware](https://s3ths1.github.io/jobify/advanced_usage/queue/) to add bounded buffering, backpressure, and priority routing.
 
 ## Installation
 
@@ -120,15 +120,15 @@ if __name__ == "__main__":
 
 ## Key Features
 
-- [**Precision scheduling**](https://theseriff.github.io/jobify/#why-jobify): event-driven timers, no polling loop.
-- [**Flexible triggers**](https://theseriff.github.io/jobify/schedule/): now, delay, timestamp, cron.
-- [**Persistence**](https://theseriff.github.io/jobify/app_settings/#storage): built-in SQLite storage for scheduled jobs.
-- [**Routing**](https://theseriff.github.io/jobify/router/): organize tasks with `JobRouter`.
-- [**Context injection**](https://theseriff.github.io/jobify/context/): inject state and dependencies into tasks.
-- [**Middleware pipeline**](https://theseriff.github.io/jobify/app_settings/#middleware): execution and scheduling interceptors.
-- [**Queue middleware**](https://theseriff.github.io/jobify/advanced_usage/queue/): FIFO/LIFO/PriorityQueue with backpressure.
-- [**Exception handlers**](https://theseriff.github.io/jobify/advanced_usage/exception_handlers/): hierarchical error handling.
-- [**Run modes**](https://theseriff.github.io/jobify/task_settings/#run_mode): `asyncio`, thread pool, process pool.
+- [**Precision scheduling**](https://s3ths1.github.io/jobify/#why-jobify): event-driven timers, no polling loop.
+- [**Flexible triggers**](https://s3ths1.github.io/jobify/schedule/): now, delay, timestamp, cron.
+- [**Persistence**](https://s3ths1.github.io/jobify/app_settings/#storage): built-in SQLite storage for scheduled jobs.
+- [**Routing**](https://s3ths1.github.io/jobify/router/): organize tasks with `JobRouter`.
+- [**Context injection**](https://s3ths1.github.io/jobify/context/): inject state and dependencies into tasks.
+- [**Middleware pipeline**](https://s3ths1.github.io/jobify/app_settings/#middleware): execution and scheduling interceptors.
+- [**Queue middleware**](https://s3ths1.github.io/jobify/advanced_usage/queue/): FIFO/LIFO/PriorityQueue with backpressure.
+- [**Exception handlers**](https://s3ths1.github.io/jobify/advanced_usage/exception_handlers/): hierarchical error handling.
+- [**Run modes**](https://s3ths1.github.io/jobify/task_settings/#run_mode): `asyncio`, thread pool, process pool.
 - [**Community DB adapters**](https://github.com/Jobify-Community/jobify-db).
 
 <details>
@@ -138,15 +138,15 @@ if __name__ == "__main__":
 | :---------------------------------------------------------------------------------------------- | :------------------: | :---------------: | :--------------: | :---------------: |
 | **Event-driven Scheduling**                                                                     | ✅ (Low-level timer) | ❌ (Polling/Loop) |  ❌ (Interval)   | ❌ (Polling/Loop) |
 | **Async Native (asyncio)**                                                                      |          ✅          |        ✅         | ❌ (Sync mostly) |        ❌         |
-| [**Context Injection**](https://theseriff.github.io/jobify/context/)                            |          ✅          |        ✅         |        ❌        |        ❌         |
-| [**FastAPI-style Routing**](https://theseriff.github.io/jobify/router/)                         |          ✅          |        ❌         |        ❌        |        ❌         |
-| [**Middleware Support**](https://theseriff.github.io/jobify/app_settings/#middleware)           |          ✅          |        ✅         | ❌ (Events only) |   ❌ (Signals)    |
-| [**Lifespan Support**](https://theseriff.github.io/jobify/app_settings/#lifespan)               |          ✅          |        ✅         |        ❌        |        ❌         |
-| [**Exception Handlers**](https://theseriff.github.io/jobify/advanced_usage/exception_handlers/) |  ✅ (Hierarchical)   |        ❌         |        ❌        |        ❌         |
-| [**Job Cancellation**](https://theseriff.github.io/jobify/job/#await-jobcancel)                 |          ✅          |        ❌         |        ✅        |        ✅         |
-| [**Cron Scheduling**](https://theseriff.github.io/jobify/schedule/#cron-expressions)            |  ✅ (Seconds level)  |   ✅ (Minutes)    |        ✅        |        ✅         |
-| [**Misfire Policy**](https://theseriff.github.io/jobify/schedule/#the-cron-object)              |          ✅          |        ❌         |        ✅        |        ❌         |
-| [**Run Modes (Thread/Process)**](https://theseriff.github.io/jobify/task_settings/#run_mode)    |          ✅          |        ✅         |        ✅        |        ✅         |
+| [**Context Injection**](https://s3ths1.github.io/jobify/context/)                            |          ✅          |        ✅         |        ❌        |        ❌         |
+| [**FastAPI-style Routing**](https://s3ths1.github.io/jobify/router/)                         |          ✅          |        ❌         |        ❌        |        ❌         |
+| [**Middleware Support**](https://s3ths1.github.io/jobify/app_settings/#middleware)           |          ✅          |        ✅         | ❌ (Events only) |   ❌ (Signals)    |
+| [**Lifespan Support**](https://s3ths1.github.io/jobify/app_settings/#lifespan)               |          ✅          |        ✅         |        ❌        |        ❌         |
+| [**Exception Handlers**](https://s3ths1.github.io/jobify/advanced_usage/exception_handlers/) |  ✅ (Hierarchical)   |        ❌         |        ❌        |        ❌         |
+| [**Job Cancellation**](https://s3ths1.github.io/jobify/job/#await-jobcancel)                 |          ✅          |        ❌         |        ✅        |        ✅         |
+| [**Cron Scheduling**](https://s3ths1.github.io/jobify/schedule/#cron-expressions)            |  ✅ (Seconds level)  |   ✅ (Minutes)    |        ✅        |        ✅         |
+| [**Misfire Policy**](https://s3ths1.github.io/jobify/schedule/#the-cron-object)              |          ✅          |        ❌         |        ✅        |        ❌         |
+| [**Run Modes (Thread/Process)**](https://s3ths1.github.io/jobify/task_settings/#run_mode)    |          ✅          |        ✅         |        ✅        |        ✅         |
 | **Zero-config Persistence**                                                                     | ✅ (SQLite default)  | ❌ (Needs Broker) |        ✅        | ❌ (Needs Broker) |
 | **Broker-backend execution**                                                                    |     ❌ (roadmap)     |        ✅         |        ❌        |        ✅         |
 
@@ -162,4 +162,4 @@ Use Jobify when:
 
 ## License
 
-This project is licensed under the [MIT license](https://github.com/theseriff/jobify/blob/main/LICENSE).
+This project is licensed under the [MIT license](https://github.com/s3ths1/jobify/blob/main/LICENSE).

@@ -94,11 +94,11 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://theseriff.github.io/jobify/"
-Repository = "https://github.com/theseriff/jobify"
-Documentation = "https://theseriff.github.io/jobify/"
-Changelog = "https://github.com/theseriff/jobify/blob/main/docs/CHANGELOG.md"
-Issues = "https://github.com/theseriff/jobify/issues"
+Homepage = "https://s3ths1.github.io/jobify/"
+Repository = "https://github.com/s3ths1/jobify"
+Documentation = "https://s3ths1.github.io/jobify/"
+Changelog = "https://github.com/s3ths1/jobify/blob/main/docs/CHANGELOG.md"
+Issues = "https://github.com/s3ths1/jobify/issues"
 
 # Tests
 [tool.pytest.ini_options]

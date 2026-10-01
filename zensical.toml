@@ -6,13 +6,13 @@
 #
 # ============================================================================
 [project]
-repo_name = "theseriff/jobify"
-repo_url = "https://github.com/theseriff/jobify"
+repo_name = "s3ths1/jobify"
+repo_url = "https://github.com/s3ths1/jobify"
 edit_uri = "edit/main/docs"
 site_name = "jobify"
 site_description = "A modern, lightweight and robust task manager with a user-friendly interface and a wide range of features, using the low-level asyncio API and more."
 site_author = "Sergey Yavorsky"
-site_url = "https://theseriff.github.io/jobify"
+site_url = "https://s3ths1.github.io/jobify"
 copyright = "&copy; 2026 Sergey Yavorsky"
 nav = [
   { "Quickstart" = "index.md" },
@@ -68,7 +68,7 @@ toggle.name = "Switch to light mode"
 # ----------------------------------------------------------------------------
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/theseriff/jobify"
+link = "https://github.com/s3ths1/jobify"
 name = "Jobify on GitHub"
 
 [[project.extra.social]]

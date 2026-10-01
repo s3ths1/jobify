@@ -8,7 +8,7 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'theseriff/jobify'
+    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 's3ths1/jobify'
     steps:
       - name: Dependabot metadata
         id: metadata

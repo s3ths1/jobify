@@ -7,31 +7,31 @@
 ### Bug Fixes
 
 - **shutdown**: Reorder sequence to prevent future race in storage
-  ([`e21d3c3`](https://github.com/theseriff/jobify/commit/e21d3c382001d10a3f9a0a2c0ae9de8c6f818fad))
+  ([`e21d3c3`](https://github.com/s3ths1/jobify/commit/e21d3c382001d10a3f9a0a2c0ae9de8c6f818fad))
 
 ### Build System
 
 - **deps**: Bump github-actions group with 4 updates
-  ([`4ffdc1c`](https://github.com/theseriff/jobify/commit/4ffdc1c47ed6dc307e65d9494a9dadb4836cf443))
+  ([`4ffdc1c`](https://github.com/s3ths1/jobify/commit/4ffdc1c47ed6dc307e65d9494a9dadb4836cf443))
 
 - **deps**: Bump the pip group with 13 updates
-  ([`2162370`](https://github.com/theseriff/jobify/commit/2162370946ed03dc61827e7eb6192c132b6abe89))
+  ([`2162370`](https://github.com/s3ths1/jobify/commit/2162370946ed03dc61827e7eb6192c132b6abe89))
 
 ### Documentation
 
 - Add idempotency example for push() with replace/force
-  ([`8f980fb`](https://github.com/theseriff/jobify/commit/8f980fbbd10f1f80af6188934ada2ea03ffccfa8))
+  ([`8f980fb`](https://github.com/s3ths1/jobify/commit/8f980fbbd10f1f80af6188934ada2ea03ffccfa8))
 
 - Add Job type hints to examples, minor code cleanups
-  ([`81688ce`](https://github.com/theseriff/jobify/commit/81688ce2643e086c3af8709132797c67e1339633))
+  ([`81688ce`](https://github.com/s3ths1/jobify/commit/81688ce2643e086c3af8709132797c67e1339633))
 
 ### Features
 
 - Inject Jobify app instance into contexts, configuration, and tasks
-  ([`3e70f26`](https://github.com/theseriff/jobify/commit/3e70f26be0bad48d996cfe20b6babf2115142152))
+  ([`3e70f26`](https://github.com/s3ths1/jobify/commit/3e70f26be0bad48d996cfe20b6babf2115142152))
 
 - Make push() idempotent with replace/force flags
-  ([`e943578`](https://github.com/theseriff/jobify/commit/e943578c879ca999be029e98404d8e8afacf78d7))
+  ([`e943578`](https://github.com/s3ths1/jobify/commit/e943578c879ca999be029e98404d8e8afacf78d7))
 
 
 ## v0.12.1 (2026-05-13)
@@ -39,7 +39,7 @@
 ### Bug Fixes
 
 - Trigger worflow pypi
-  ([`909412d`](https://github.com/theseriff/jobify/commit/909412d0752c4586ef3664e973903ea5e9e2afd4))
+  ([`909412d`](https://github.com/s3ths1/jobify/commit/909412d0752c4586ef3664e973903ea5e9e2afd4))
 
 
 ## v0.12.0 (2026-05-13)
@@ -47,53 +47,53 @@
 ### Build System
 
 - Add adaptix to test group
-  ([`8c01776`](https://github.com/theseriff/jobify/commit/8c017762bbe058726e4ddfacafd40be5cf62d1cd))
+  ([`8c01776`](https://github.com/s3ths1/jobify/commit/8c017762bbe058726e4ddfacafd40be5cf62d1cd))
 
 - Reorganize dependencies, refactor benchmarks, fix test filename and update font
-  ([`052808f`](https://github.com/theseriff/jobify/commit/052808fdaf7bdaf3b5fdb8026598781f17f3cbf1))
+  ([`052808f`](https://github.com/s3ths1/jobify/commit/052808fdaf7bdaf3b5fdb8026598781f17f3cbf1))
 
 ### Documentation
 
 - Add Google-style docstrings for public API
-  ([`c9dfc52`](https://github.com/theseriff/jobify/commit/c9dfc52f8c62ddc0fbc9cb48db108a575d0167bf))
+  ([`c9dfc52`](https://github.com/s3ths1/jobify/commit/c9dfc52f8c62ddc0fbc9cb48db108a575d0167bf))
 
 - Re-design documentation with Zensical modern patterns
-  ([`144f004`](https://github.com/theseriff/jobify/commit/144f004922716e3a25ab3c00afbb469da2c24cf8))
+  ([`144f004`](https://github.com/s3ths1/jobify/commit/144f004922716e3a25ab3c00afbb469da2c24cf8))
 
 - Update index.md
-  ([`1418e24`](https://github.com/theseriff/jobify/commit/1418e24c89ecc755138774adfc28d62f867022db))
+  ([`1418e24`](https://github.com/s3ths1/jobify/commit/1418e24c89ecc755138774adfc28d62f867022db))
 
 - Update README.md
-  ([`871cfab`](https://github.com/theseriff/jobify/commit/871cfabd065283c6383865a95d54219bdfe46d74))
+  ([`871cfab`](https://github.com/s3ths1/jobify/commit/871cfabd065283c6383865a95d54219bdfe46d74))
 
 - Update README.md
-  ([`51a1666`](https://github.com/theseriff/jobify/commit/51a1666a0a3f1ad16f87ce50c619c1db5ea1aea1))
+  ([`51a1666`](https://github.com/s3ths1/jobify/commit/51a1666a0a3f1ad16f87ce50c619c1db5ea1aea1))
 
 ### Features
 
 - Add adaptix support and expand API documentation
-  ([`7735e4b`](https://github.com/theseriff/jobify/commit/7735e4bd9686c00eb25833d58a06b281d5bd3250))
+  ([`7735e4b`](https://github.com/s3ths1/jobify/commit/7735e4bd9686c00eb25833d58a06b281d5bd3250))
 
 - Add optional support for cbor and orjson serializers
-  ([`bfbade2`](https://github.com/theseriff/jobify/commit/bfbade229d168efa58562d9636a3b972ef9a1a9f))
+  ([`bfbade2`](https://github.com/s3ths1/jobify/commit/bfbade229d168efa58562d9636a3b972ef9a1a9f))
 
 - Allow custom UUID generator in configuration
-  ([`8f57868`](https://github.com/theseriff/jobify/commit/8f57868f52f491572df0f296a4f8430ef5907a86))
+  ([`8f57868`](https://github.com/s3ths1/jobify/commit/8f57868f52f491572df0f296a4f8430ef5907a86))
 
 - **retry**: Refactor SmartRetry to align with Airflow behavior
-  ([`bb337e5`](https://github.com/theseriff/jobify/commit/bb337e5e304501e8129742614c675821ddc57032))
+  ([`bb337e5`](https://github.com/s3ths1/jobify/commit/bb337e5e304501e8129742614c675821ddc57032))
 
 - **serializers**: Add cbor support
-  ([`60edb48`](https://github.com/theseriff/jobify/commit/60edb481c11091f0e6499d26f17d9c25b2cc55a9))
+  ([`60edb48`](https://github.com/s3ths1/jobify/commit/60edb481c11091f0e6499d26f17d9c25b2cc55a9))
 
 - **serializers**: Add msgpack support
-  ([`82f05fb`](https://github.com/theseriff/jobify/commit/82f05fb8b33e5b07b879eda5a8dcd0fa78bbbf75))
+  ([`82f05fb`](https://github.com/s3ths1/jobify/commit/82f05fb8b33e5b07b879eda5a8dcd0fa78bbbf75))
 
 - **serializers**: Add orjson support
-  ([`e583032`](https://github.com/theseriff/jobify/commit/e5830320c88554d9d4cd7c4839f2f0eae1d8ea9d))
+  ([`e583032`](https://github.com/s3ths1/jobify/commit/e5830320c88554d9d4cd7c4839f2f0eae1d8ea9d))
 
 - **typeadapter**: Add pydantic support
-  ([`cf09b80`](https://github.com/theseriff/jobify/commit/cf09b8082b5547bcb81e12cd36ec84bce86174bb))
+  ([`cf09b80`](https://github.com/s3ths1/jobify/commit/cf09b8082b5547bcb81e12cd36ec84bce86174bb))
 
 
 ## v0.11.0 (2026-05-10)
@@ -101,23 +101,23 @@
 ### Build System
 
 - **deps**: Bump the github-actions group with 8 updates
-  ([`c231068`](https://github.com/theseriff/jobify/commit/c23106874a52ba70952c4f358cc9ced110d4835c))
+  ([`c231068`](https://github.com/s3ths1/jobify/commit/c23106874a52ba70952c4f358cc9ced110d4835c))
 
 - **deps**: Bump the pip group with 10 updates
-  ([`2ad1ba1`](https://github.com/theseriff/jobify/commit/2ad1ba198e17f1c94dfe7abcbe1394e89e5d5754))
+  ([`2ad1ba1`](https://github.com/s3ths1/jobify/commit/2ad1ba198e17f1c94dfe7abcbe1394e89e5d5754))
 
 ### Documentation
 
 - Re-design style
-  ([`b9d00e3`](https://github.com/theseriff/jobify/commit/b9d00e37b82ad9849c6b3276e11628e9229a8479))
+  ([`b9d00e3`](https://github.com/s3ths1/jobify/commit/b9d00e37b82ad9849c6b3276e11628e9229a8479))
 
 - Update README.md
-  ([`3344151`](https://github.com/theseriff/jobify/commit/3344151a98ab239e46ef85e0276ca573461778dc))
+  ([`3344151`](https://github.com/s3ths1/jobify/commit/3344151a98ab239e46ef85e0276ca573461778dc))
 
 ### Features
 
 - **plugins**: Add Plugin lifecycle system with QueueMiddleware, unify STOP/UNSET sentinels
-  ([`0c3bdaf`](https://github.com/theseriff/jobify/commit/0c3bdaf47c9fb0ed18bf6d3294875de165b659ac))
+  ([`0c3bdaf`](https://github.com/s3ths1/jobify/commit/0c3bdaf47c9fb0ed18bf6d3294875de165b659ac))
 
 
 ## v0.10.1 (2026-04-03)
@@ -125,17 +125,17 @@
 ### Build System
 
 - **deps**: Bump the github-actions group with 5 updates
-  ([`fdb5b6a`](https://github.com/theseriff/jobify/commit/fdb5b6a69c5b7a58322e4623c8f75c7a14b1955b))
+  ([`fdb5b6a`](https://github.com/s3ths1/jobify/commit/fdb5b6a69c5b7a58322e4623c8f75c7a14b1955b))
 
 ### Documentation
 
 - Many adapters to database
-  ([`dd2fd59`](https://github.com/theseriff/jobify/commit/dd2fd59d5841af33caac4f7ba5a8c67bed17ec27))
+  ([`dd2fd59`](https://github.com/s3ths1/jobify/commit/dd2fd59d5841af33caac4f7ba5a8c67bed17ec27))
 
 ### Performance Improvements
 
 - Cache is_persist flag
-  ([`ca9683e`](https://github.com/theseriff/jobify/commit/ca9683ebd687ce49c5876608426b17eb890a161d))
+  ([`ca9683e`](https://github.com/s3ths1/jobify/commit/ca9683ebd687ce49c5876608426b17eb890a161d))
 
 
 ## v0.10.0 (2026-03-30)
@@ -143,15 +143,15 @@
 ### Documentation
 
 - **job**: `await job` info added
-  ([`22a32f9`](https://github.com/theseriff/jobify/commit/22a32f9cbb21eb1fe38891a7e6b62ca10c957af0))
+  ([`22a32f9`](https://github.com/s3ths1/jobify/commit/22a32f9cbb21eb1fe38891a7e6b62ca10c957af0))
 
 - **update**: Fixed links
-  ([`0d596a0`](https://github.com/theseriff/jobify/commit/0d596a06a62a1ab8db052f91949aedc22dd955fa))
+  ([`0d596a0`](https://github.com/s3ths1/jobify/commit/0d596a06a62a1ab8db052f91949aedc22dd955fa))
 
 ### Features
 
 - **job**: Make Job awaitable and inject schedule_builder
-  ([`07e32e7`](https://github.com/theseriff/jobify/commit/07e32e7113eea77e56c7e7601a2d7f4e40190cb0))
+  ([`07e32e7`](https://github.com/s3ths1/jobify/commit/07e32e7113eea77e56c7e7601a2d7f4e40190cb0))
 
 
 ## v0.9.2 (2026-03-22)
@@ -159,7 +159,7 @@
 ### Performance Improvements
 
 - **storage**: Replace threading lock with asyncio.Queue in SQLiteStorage
-  ([`2b72aba`](https://github.com/theseriff/jobify/commit/2b72aba1defe605ff25e103dcc60e886fd56a00c))
+  ([`2b72aba`](https://github.com/s3ths1/jobify/commit/2b72aba1defe605ff25e103dcc60e886fd56a00c))
 
 
 ## v0.9.1 (2026-03-21)
@@ -167,12 +167,12 @@
 ### Build System
 
 - **deps**: Bump the github-actions group with 2 updates
-  ([`07d800a`](https://github.com/theseriff/jobify/commit/07d800a0393f7bafe2b4d853b04bd5f384ee0dca))
+  ([`07d800a`](https://github.com/s3ths1/jobify/commit/07d800a0393f7bafe2b4d853b04bd5f384ee0dca))
 
 ### Performance Improvements
 
 - **context**: Cache inject_params in FuncSpec, pass func_spec via Runnable
-  ([`68816b7`](https://github.com/theseriff/jobify/commit/68816b7c5a765b8516bffec605a8940f2635e7e4))
+  ([`68816b7`](https://github.com/s3ths1/jobify/commit/68816b7c5a765b8516bffec605a8940f2635e7e4))
 
 
 ## v0.9.0 (2026-03-16)
@@ -180,18 +180,18 @@
 ### Documentation
 
 - Add FastAPI example and fix dishka-jobify description
-  ([`09f55f8`](https://github.com/theseriff/jobify/commit/09f55f8431e6aa454c7483f3f35e222a4f3446bb))
+  ([`09f55f8`](https://github.com/s3ths1/jobify/commit/09f55f8431e6aa454c7483f3f35e222a4f3446bb))
 
 - Enhance feature showcase and add system time trade-off docs
-  ([`ec60fe5`](https://github.com/theseriff/jobify/commit/ec60fe51b04055bbb88776d8b2a7b13c20ee788e))
+  ([`ec60fe5`](https://github.com/s3ths1/jobify/commit/ec60fe51b04055bbb88776d8b2a7b13c20ee788e))
 
 - **task_settings**: Improve describe run mode
-  ([`7f90cb9`](https://github.com/theseriff/jobify/commit/7f90cb92fcabe2e5b1fc97231c05b1a57c81dff1))
+  ([`7f90cb9`](https://github.com/s3ths1/jobify/commit/7f90cb92fcabe2e5b1fc97231c05b1a57c81dff1))
 
 ### Features
 
 - Add NoResultError to abort retries immediately
-  ([`e517919`](https://github.com/theseriff/jobify/commit/e517919b2a46c6e664238de5d88edff22f8e7209))
+  ([`e517919`](https://github.com/s3ths1/jobify/commit/e517919b2a46c6e664238de5d88edff22f8e7209))
 
 
 ## v0.8.1 (2026-03-13)
@@ -199,12 +199,12 @@
 ### Bug Fixes
 
 - **middleware**: Allow exception handlers to return values
-  ([`27043eb`](https://github.com/theseriff/jobify/commit/27043eb04cd35b83d358999190e7d48305d357f2))
+  ([`27043eb`](https://github.com/s3ths1/jobify/commit/27043eb04cd35b83d358999190e7d48305d357f2))
 
 ### Documentation
 
 - Add exception_handlers
-  ([`1e55dca`](https://github.com/theseriff/jobify/commit/1e55dca8061a69c10cf21f919ba4cc08aaf3d4a6))
+  ([`1e55dca`](https://github.com/s3ths1/jobify/commit/1e55dca8061a69c10cf21f919ba4cc08aaf3d4a6))
 
 
 ## v0.8.0 (2026-03-10)
@@ -212,17 +212,17 @@
 ### Build System
 
 - **deps**: Bump the github-actions group with 5 updates
-  ([`e6c6716`](https://github.com/theseriff/jobify/commit/e6c6716d38c207b85a81ce03f580423595d22821))
+  ([`e6c6716`](https://github.com/s3ths1/jobify/commit/e6c6716d38c207b85a81ce03f580423595d22821))
 
 ### Documentation
 
 - Fix quick start code sample error
-  ([`7e22631`](https://github.com/theseriff/jobify/commit/7e22631f5c61ad13980bf12e67983b4e504d7431))
+  ([`7e22631`](https://github.com/s3ths1/jobify/commit/7e22631f5c61ad13980bf12e67983b4e504d7431))
 
 ### Features
 
 - **cron**: Add args and kwargs support for scheduled tasks
-  ([`20e20da`](https://github.com/theseriff/jobify/commit/20e20da7cf73ffc6babd91c480dd1b1e1f19586d))
+  ([`20e20da`](https://github.com/s3ths1/jobify/commit/20e20da7cf73ffc6babd91c480dd1b1e1f19586d))
 
 
 ## v0.7.1 (2026-03-01)
@@ -230,15 +230,15 @@
 ### Bug Fixes
 
 - Cancel task when task is running
-  ([`02ac298`](https://github.com/theseriff/jobify/commit/02ac298a648822dea8e865c33c03e94a5ff42efd))
+  ([`02ac298`](https://github.com/s3ths1/jobify/commit/02ac298a648822dea8e865c33c03e94a5ff42efd))
 
 ### Documentation
 
 - Refactor quick start
-  ([`603a8fd`](https://github.com/theseriff/jobify/commit/603a8fd167a01b3f779c5f646b21fad9e4c2cf60))
+  ([`603a8fd`](https://github.com/s3ths1/jobify/commit/603a8fd167a01b3f779c5f646b21fad9e4c2cf60))
 
 - **index**: Fix hl_lines
-  ([`06f69de`](https://github.com/theseriff/jobify/commit/06f69de0c57492bc2fadf927d6ab7fd9cd735999))
+  ([`06f69de`](https://github.com/s3ths1/jobify/commit/06f69de0c57492bc2fadf927d6ab7fd9cd735999))
 
 
 ## v0.7.0 (2026-02-04)
@@ -246,20 +246,20 @@
 ### Build System
 
 - **deps**: Bump the github-actions group with 3 updates
-  ([`7528bba`](https://github.com/theseriff/jobify/commit/7528bba485a1f2a6277a07ccf0dc1d602ebd6fde))
+  ([`7528bba`](https://github.com/s3ths1/jobify/commit/7528bba485a1f2a6277a07ccf0dc1d602ebd6fde))
 
 - **deps**: Bump the pip group with 11 updates
-  ([`252943f`](https://github.com/theseriff/jobify/commit/252943f52077132d7d9bd04a5acbfb8317fd6a00))
+  ([`252943f`](https://github.com/s3ths1/jobify/commit/252943f52077132d7d9bd04a5acbfb8317fd6a00))
 
 ### Documentation
 
 - Add guide for immediate execution via .push()
-  ([`0499e5c`](https://github.com/theseriff/jobify/commit/0499e5c604d364290e8db793c6ad63b92b4e0474))
+  ([`0499e5c`](https://github.com/s3ths1/jobify/commit/0499e5c604d364290e8db793c6ad63b92b4e0474))
 
 ### Features
 
 - **scheduler**: Introduce .push() as a concise alternative to .delay(0)
-  ([`60db048`](https://github.com/theseriff/jobify/commit/60db048507254c5e67eaa13c5261746526cd7f83))
+  ([`60db048`](https://github.com/s3ths1/jobify/commit/60db048507254c5e67eaa13c5261746526cd7f83))
 
 
 ## v0.6.1 (2026-02-02)
@@ -267,7 +267,7 @@
 ### Bug Fixes
 
 - **scheduler**: Getting origin_arguments instead bound.argument
-  ([`1e68c2f`](https://github.com/theseriff/jobify/commit/1e68c2f14b91dcf33ac41df2bf3c7a2d2e10c726))
+  ([`1e68c2f`](https://github.com/s3ths1/jobify/commit/1e68c2f14b91dcf33ac41df2bf3c7a2d2e10c726))
 
 
 ## v0.6.0 (2026-01-30)
@@ -275,21 +275,21 @@
 ### Documentation
 
 - Add contributing guidelines and update documentation
-  ([`e77b483`](https://github.com/theseriff/jobify/commit/e77b483382e68520cf974f9608951a5553423782))
+  ([`e77b483`](https://github.com/s3ths1/jobify/commit/e77b483382e68520cf974f9608951a5553423782))
 
 - Document OuterMiddleware, OuterContext and force parameter
-  ([`0d2e139`](https://github.com/theseriff/jobify/commit/0d2e139ca8343bc19023e3ad79532f671246c643))
+  ([`0d2e139`](https://github.com/s3ths1/jobify/commit/0d2e139ca8343bc19023e3ad79532f671246c643))
 
 - Update README.md
-  ([`9969e02`](https://github.com/theseriff/jobify/commit/9969e02b1b0fd9325eb843925949e4c14e327087))
+  ([`9969e02`](https://github.com/s3ths1/jobify/commit/9969e02b1b0fd9325eb843925949e4c14e327087))
 
 ### Features
 
 - **middleware**: Introduce outer middleware for job scheduling
-  ([`2a9d366`](https://github.com/theseriff/jobify/commit/2a9d3660ff28eab5043969b08afc9698c96aedff))
+  ([`2a9d366`](https://github.com/s3ths1/jobify/commit/2a9d3660ff28eab5043969b08afc9698c96aedff))
 
 - **router**: Support custom route_class for Jobify and JobRouter
-  ([`e32f94a`](https://github.com/theseriff/jobify/commit/e32f94a6bfd72acca250dd647217a45b9109b0b2))
+  ([`e32f94a`](https://github.com/s3ths1/jobify/commit/e32f94a6bfd72acca250dd647217a45b9109b0b2))
 
 
 ## v0.5.2 (2026-01-25)
@@ -297,18 +297,18 @@
 ### Bug Fixes
 
 - Add name field to Runnable for better debugging
-  ([`8ce04ca`](https://github.com/theseriff/jobify/commit/8ce04ca16c0521b6bfca3eb6fc6b406a384841c4))
+  ([`8ce04ca`](https://github.com/s3ths1/jobify/commit/8ce04ca16c0521b6bfca3eb6fc6b406a384841c4))
 
 ### Documentation
 
 - Add comprehensive real-world backup application example
-  ([`f58bf11`](https://github.com/theseriff/jobify/commit/f58bf1117a564835b57f7c6d27d140b2da4834fe))
+  ([`f58bf11`](https://github.com/s3ths1/jobify/commit/f58bf1117a564835b57f7c6d27d140b2da4834fe))
 
 - Update examples and upgrade build dependencies
-  ([`0d121c2`](https://github.com/theseriff/jobify/commit/0d121c275abaa89f2332dec7d76df0b09adb399b))
+  ([`0d121c2`](https://github.com/s3ths1/jobify/commit/0d121c275abaa89f2332dec7d76df0b09adb399b))
 
 - Update link misfire_policy and update ruff configuration
-  ([`b5062e5`](https://github.com/theseriff/jobify/commit/b5062e5a5a072a633f393bc22b8361002c8bd5de))
+  ([`b5062e5`](https://github.com/s3ths1/jobify/commit/b5062e5a5a072a633f393bc22b8361002c8bd5de))
 
 
 ## v0.5.1 (2026-01-23)
@@ -316,7 +316,7 @@
 ### Bug Fixes
 
 - **core**: Sync trigger offset in storage during schedule restoration
-  ([`2c4fed8`](https://github.com/theseriff/jobify/commit/2c4fed8854da59540791af8baadff2cd809cc816))
+  ([`2c4fed8`](https://github.com/s3ths1/jobify/commit/2c4fed8854da59540791af8baadff2cd809cc816))
 
 
 ## v0.5.0 (2026-01-22)
@@ -324,7 +324,7 @@
 ### Features
 
 - **cron**: Implement stateful run_count and automatic database cleanup
-  ([`35ed100`](https://github.com/theseriff/jobify/commit/35ed10003c86b84c241cf234cd1a568c736bc78d))
+  ([`35ed100`](https://github.com/s3ths1/jobify/commit/35ed10003c86b84c241cf234cd1a568c736bc78d))
 
 
 ## v0.4.0 (2026-01-21)
@@ -332,17 +332,17 @@
 ### Bug Fixes
 
 - **jobify.shutdown**: Order cancel jobs changes
-  ([`f18a3cd`](https://github.com/theseriff/jobify/commit/f18a3cd9d03d6801f0a86ad847fda967f774c66f))
+  ([`f18a3cd`](https://github.com/s3ths1/jobify/commit/f18a3cd9d03d6801f0a86ad847fda967f774c66f))
 
 ### Documentation
 
 - Update cron documentation and add integrations page
-  ([`9192feb`](https://github.com/theseriff/jobify/commit/9192febc00f923d71c959fde0d9caf21a9a4f1f8))
+  ([`9192feb`](https://github.com/s3ths1/jobify/commit/9192febc00f923d71c959fde0d9caf21a9a4f1f8))
 
 ### Features
 
 - **scheduler**: Implement idempotent start_date for cron jobs
-  ([`2af4b89`](https://github.com/theseriff/jobify/commit/2af4b898ab9f78020eeb7a64cde85e16b4dfaf5f))
+  ([`2af4b89`](https://github.com/s3ths1/jobify/commit/2af4b898ab9f78020eeb7a64cde85e16b4dfaf5f))
 
 
 ## v0.3.3 (2026-01-19)
@@ -350,7 +350,7 @@
 ### Bug Fixes
 
 - Ensure signals are captured and restored during wait_all
-  ([`0db3164`](https://github.com/theseriff/jobify/commit/0db31647183818db07302a1340951b96d87c2ea7))
+  ([`0db3164`](https://github.com/s3ths1/jobify/commit/0db31647183818db07302a1340951b96d87c2ea7))
 
 
 ## v0.3.2 (2026-01-17)
@@ -358,7 +358,7 @@
 ### Performance Improvements
 
 - **wait_all**: Implement idle state tracking using asyncio.Event
-  ([`6d8b3d0`](https://github.com/theseriff/jobify/commit/6d8b3d09fcfa56d166d24f4c44f86e105a1bf7a9))
+  ([`6d8b3d0`](https://github.com/s3ths1/jobify/commit/6d8b3d09fcfa56d166d24f4c44f86e105a1bf7a9))
 
 
 ## v0.3.1 (2026-01-17)
@@ -366,7 +366,7 @@
 ### Bug Fixes
 
 - Resolve cron lifecycle, context injection, and misfire policy issues
-  ([`23e8b4f`](https://github.com/theseriff/jobify/commit/23e8b4fcd21199697a5543b2c2a7aceffc60c083))
+  ([`23e8b4f`](https://github.com/s3ths1/jobify/commit/23e8b4fcd21199697a5543b2c2a7aceffc60c083))
 
 
 ## v0.3.0 (2026-01-16)
@@ -374,20 +374,20 @@
 ### Bug Fixes
 
 - **resolve_name**: Robust task ID generation via inspect and pathlib
-  ([`1e6683d`](https://github.com/theseriff/jobify/commit/1e6683d64efe64c06b2304e3f5af1fb2fc61c56d))
+  ([`1e6683d`](https://github.com/s3ths1/jobify/commit/1e6683d64efe64c06b2304e3f5af1fb2fc61c56d))
 
 ### Documentation
 
 - Clean up formatting and improve cross-referencing
-  ([`965511b`](https://github.com/theseriff/jobify/commit/965511b16a514cf5fa544d84dd85ef89c5f6089f))
+  ([`965511b`](https://github.com/s3ths1/jobify/commit/965511b16a514cf5fa544d84dd85ef89c5f6089f))
 
 - Update dynamic scheduling docs with replace parameter
-  ([`bc320c8`](https://github.com/theseriff/jobify/commit/bc320c8e2d39c02995359703a99dc7d611bee690))
+  ([`bc320c8`](https://github.com/s3ths1/jobify/commit/bc320c8e2d39c02995359703a99dc7d611bee690))
 
 ### Features
 
 - Allow replacing existing jobs by ID
-  ([`64191b7`](https://github.com/theseriff/jobify/commit/64191b70790c2a59819649ec360f018b674b9bb1))
+  ([`64191b7`](https://github.com/s3ths1/jobify/commit/64191b70790c2a59819649ec360f018b674b9bb1))
 
 
 ## v0.2.1 (2026-01-15)
@@ -395,10 +395,10 @@
 ### Bug Fixes
 
 - Correct cron restoration and misfire handling on startup
-  ([`39a262e`](https://github.com/theseriff/jobify/commit/39a262edf857082b545abf5e0f43e016837119e6))
+  ([`39a262e`](https://github.com/s3ths1/jobify/commit/39a262edf857082b545abf5e0f43e016837119e6))
 
 - **storage/sqlite**: Prevent segmentation fault on shutdown
-  ([`657f465`](https://github.com/theseriff/jobify/commit/657f46563091146cb0a0622101ed22a05d8de586))
+  ([`657f465`](https://github.com/s3ths1/jobify/commit/657f46563091146cb0a0622101ed22a05d8de586))
 
 
 ## v0.2.0 (2026-01-13)
@@ -406,29 +406,29 @@
 ### Bug Fixes
 
 - Add offset to CronArguments for proper schedule restoration
-  ([`e223416`](https://github.com/theseriff/jobify/commit/e223416fdba22ffccf6ca6f9b8486276eb4f4e9a))
+  ([`e223416`](https://github.com/s3ths1/jobify/commit/e223416fdba22ffccf6ca6f9b8486276eb4f4e9a))
 
 ### Documentation
 
 - Add misfire policy documentation and improve cron configuration
-  ([`2f582a8`](https://github.com/theseriff/jobify/commit/2f582a8c34dc7887f55081929508f9a0dbae137a))
+  ([`2f582a8`](https://github.com/s3ths1/jobify/commit/2f582a8c34dc7887f55081929508f9a0dbae137a))
 
 - Update feature comparison table and dynamic scheduling examples
-  ([`2f582a8`](https://github.com/theseriff/jobify/commit/2f582a8c34dc7887f55081929508f9a0dbae137a))
+  ([`2f582a8`](https://github.com/s3ths1/jobify/commit/2f582a8c34dc7887f55081929508f9a0dbae137a))
 
 ### Features
 
 - Add misfire policy support and improve serializers
-  ([`7d93696`](https://github.com/theseriff/jobify/commit/7d936969e5af0af77c681cf041eed50c0042ab16))
+  ([`7d93696`](https://github.com/s3ths1/jobify/commit/7d936969e5af0af77c681cf041eed50c0042ab16))
 
 - Add ZoneInfo serialization support to JSON extended encoder/decoder
-  ([`3e97f81`](https://github.com/theseriff/jobify/commit/3e97f8100cc0e040bebf2a5484c8542e3564903d))
+  ([`3e97f81`](https://github.com/s3ths1/jobify/commit/3e97f8100cc0e040bebf2a5484c8542e3564903d))
 
 - Simplify API, add misfire policy, and improve storage
-  ([`7a02a74`](https://github.com/theseriff/jobify/commit/7a02a7406096a2e57e57d940e4cef0232ab236cc))
+  ([`7a02a74`](https://github.com/s3ths1/jobify/commit/7a02a7406096a2e57e57d940e4cef0232ab236cc))
 
 - **scheduler**: Implement code-first reconciliation and misfire foundation
-  ([`9867327`](https://github.com/theseriff/jobify/commit/98673270570818738f062522bf05377c22775d3a))
+  ([`9867327`](https://github.com/s3ths1/jobify/commit/98673270570818738f062522bf05377c22775d3a))
 
 
 ## v0.1.2 (2026-01-07)
@@ -436,27 +436,27 @@
 ### Bug Fixes
 
 - **core**: Sync cron state with DB to fix restart behavior
-  ([#66](https://github.com/theseriff/jobify/pull/66),
-  [`07e8df3`](https://github.com/theseriff/jobify/commit/07e8df32e1e4e372f6be3c3db9da2f67c9068693))
+  ([#66](https://github.com/s3ths1/jobify/pull/66),
+  [`07e8df3`](https://github.com/s3ths1/jobify/commit/07e8df32e1e4e372f6be3c3db9da2f67c9068693))
 
 ### Build System
 
 - **deps**: Bump the github-actions group with 5 updates
-  ([#65](https://github.com/theseriff/jobify/pull/65),
-  [`9a96ee2`](https://github.com/theseriff/jobify/commit/9a96ee203610f1c04b5ac0f7d31876051dd02428))
+  ([#65](https://github.com/s3ths1/jobify/pull/65),
+  [`9a96ee2`](https://github.com/s3ths1/jobify/commit/9a96ee203610f1c04b5ac0f7d31876051dd02428))
 
 ### Documentation
 
-- Fix example lifespan ([#65](https://github.com/theseriff/jobify/pull/65),
-  [`9a96ee2`](https://github.com/theseriff/jobify/commit/9a96ee203610f1c04b5ac0f7d31876051dd02428))
+- Fix example lifespan ([#65](https://github.com/s3ths1/jobify/pull/65),
+  [`9a96ee2`](https://github.com/s3ths1/jobify/commit/9a96ee203610f1c04b5ac0f7d31876051dd02428))
 
 - Update comparison table and add note about durable performance
-  ([#66](https://github.com/theseriff/jobify/pull/66),
-  [`07e8df3`](https://github.com/theseriff/jobify/commit/07e8df32e1e4e372f6be3c3db9da2f67c9068693))
+  ([#66](https://github.com/s3ths1/jobify/pull/66),
+  [`07e8df3`](https://github.com/s3ths1/jobify/commit/07e8df32e1e4e372f6be3c3db9da2f67c9068693))
 
 - Update middleware examples and improve type hints
-  ([#66](https://github.com/theseriff/jobify/pull/66),
-  [`07e8df3`](https://github.com/theseriff/jobify/commit/07e8df32e1e4e372f6be3c3db9da2f67c9068693))
+  ([#66](https://github.com/s3ths1/jobify/pull/66),
+  [`07e8df3`](https://github.com/s3ths1/jobify/commit/07e8df32e1e4e372f6be3c3db9da2f67c9068693))
 
 
 ## v0.1.1 (2025-12-31)
@@ -464,7 +464,7 @@
 ### Bug Fixes
 
 - Re-release due to pypi version conflict
-  ([`c75e186`](https://github.com/theseriff/jobify/commit/c75e186a76b0a48b12627d5c9ce74147540dd861))
+  ([`c75e186`](https://github.com/s3ths1/jobify/commit/c75e186a76b0a48b12627d5c9ce74147540dd861))
 
 
 ## v0.1.0 (2025-12-31)
