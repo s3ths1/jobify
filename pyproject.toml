@@ -9,7 +9,7 @@ module-root = "src"
 name = "jobify"
 version = "0.13.0"
 description = "A modern, lightweight and robust task manager with a user-friendly interface and a wide range of features, using the low-level asyncio API and more."
-requires-python = ">=3.10,<3.15"
+requires-python = ">=3.11,<3.16"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
@@ -55,13 +55,13 @@ fast = ["jobify[orjson,pydantic]"]
 [dependency-groups]
 optionals = ["jobify[cbor2,msgpack,orjson,pydantic]"]
 lint = [
-    "mypy==2.3.0",
-    "ruff==0.16.0",
+    "mypy==2.4.0",
+    "ruff==0.17.2",
     "bandit==1.9.4",
-    "zizmor==1.28.0",
-    "semgrep==1.171.0",
+    "zizmor==1.31.1",
+    "semgrep==1.182.0",
     "codespell==2.4.3",
-    "ty==0.0.78",
+    "ty==0.0.92",
     # mypy extensions
     "mypy-extensions==1.1.0",
     "types-python-crontab",
@@ -90,7 +90,7 @@ dev = [
     { include-group = "docs" },
     { include-group = "benchmarks" },
     "detect-secrets==1.5.0",
-    "prek==0.4.11",
+    "prek==0.5.7",
 ]
 
 [project.urls]
@@ -141,7 +141,7 @@ omit = ["*/__init__.py", '*/types.py']
 
 # Static Analysis
 [tool.ty.environment]
-python-version = "3.10"
+python-version = "3.11"
 
 [tool.ty.src]
 include = ["src", "tests", "benchmarks", "examples"]
@@ -162,7 +162,7 @@ output-format = "concise"
 [tool.mypy]
 mypy_path = "src:examples/real_world/src"
 files = ["src", "tests", "benchmarks"]
-python_version = "3.10"
+python_version = "3.11"
 strict = true
 pretty = true
 warn_return_any = true
@@ -192,7 +192,7 @@ targets = "src"
 [tool.ruff]
 src = ["src"]
 include = ["src/**.py", "tests/**.py", "examples/**.py", "benchmarks/**.py"]
-target-version = "py310"
+target-version = "py311"
 line-length = 88
 fix = true
 
