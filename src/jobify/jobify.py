@@ -16,12 +16,11 @@ from typing import (
     Literal,
     ParamSpec,
     Protocol,
+    Self,
     TypeVar,
     runtime_checkable,
 )
 from zoneinfo import ZoneInfo
-
-from typing_extensions import Self
 
 from jobify._internal.common.constants import PATCH_CRON_DEF_ID, UNSET
 from jobify._internal.configuration import (
@@ -511,7 +510,7 @@ class Jobify(RootRouter):
         for captured_signal in reversed(self._captured_signals):
             signal.raise_signal(captured_signal)
 
-    async def wait_all(self, timeout: float | None = None) -> None:
+    async def wait_all(self, timeout: float | None = None) -> None:  # noqa: ASYNC109
         """Wait for all currently scheduled jobs to complete.
 
         This method waits until all jobs currently registered have finished

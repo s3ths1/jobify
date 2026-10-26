@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from typing import NamedTuple
 from unittest.mock import Mock, call
 from uuid import UUID, uuid4
@@ -10,8 +10,6 @@ from jobify import Jobify
 from jobify._internal.message import AtArguments, PushArguments
 from jobify.storage import SQLiteStorage
 from jobify.typeadapter import Dumper, Loader, PydanticConverter
-
-UTC = timezone.utc
 
 
 class PairAdapter(Dumper, Loader): ...

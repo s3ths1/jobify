@@ -15,7 +15,7 @@ dependencies = [
 """
 
 import asyncio
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from typing import NamedTuple
 from uuid import UUID
 
@@ -55,7 +55,7 @@ async def add_user(user: User) -> UUID:
 
 async def main() -> None:
     async with app:
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         # Creating a user with uuid7
         user = User(uuid7(), "Ivan Zolo", now)
         # Scheduling the task

@@ -24,6 +24,6 @@ class TimeoutMiddleware(BaseMiddleware):
 
         try:
             return await asyncio.wait_for(call_next(context), timeout=timeout)
-        except asyncio.TimeoutError as exc:
+        except TimeoutError as exc:
             job_id = context.job.id
             raise JobTimeoutError(job_id=job_id, timeout=timeout) from exc
