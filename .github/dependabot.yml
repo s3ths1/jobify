@@ -8,7 +8,6 @@ updates:
       github-actions:
         patterns:
           - "*"
-    target-branch: main
     cooldown:
       default-days: 7
 
@@ -17,9 +16,20 @@ updates:
     schedule:
       interval: monthly
     groups:
-      pip:
+      all-patch:
         patterns:
           - "*"
-    target-branch: main
+        update-types:
+          - patch
+      all-minor:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+      all-major:
+        patterns:
+          - "*"
+        update-types:
+          - major
     cooldown:
       default-days: 7
