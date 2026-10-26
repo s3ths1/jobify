@@ -44,6 +44,9 @@ jobs:
           install-only: true
 
       - uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 # v4.0.0
+        with:
+          just-version: "1.59.0"
+
       - name: Execute Pre-Commit
         run: just pre-commit-all
 
@@ -72,6 +75,9 @@ jobs:
         run: uv sync --locked --no-dev --group test
 
       - uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 # v4.0.0
+        with:
+          just-version: "1.59.0"
+
       - name: Run all tests
         run: just test-coverage-all
 
