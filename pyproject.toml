@@ -76,7 +76,7 @@ test = [
     "covdefaults>=2.3.0",
     "coverage[toml]==7.15.2",
     # integrations
-    "adaptix>=3.0.0b1,<4",
+    "adaptix>=3.0.0b12,<4",
     "uuid-utils",
 ]
 docs = ["zensical==0.0.51", "mkdocstrings[python]==1.0.6"]
