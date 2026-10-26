@@ -80,11 +80,11 @@ SupportedTypes: TypeAlias = (
 TypeRegistry: TypeAlias = dict[str, Callable[..., SupportedTypes]]
 
 
-def is_named_tuple_type(tp: Any) -> TypeIs[NamedTuple]:  # noqa: ANN401
+def is_named_tuple_type(tp: Any) -> bool:  # noqa: ANN401
     return isinstance(tp, type) and issubclass(tp, tuple) and hasattr(tp, "_fields")
 
 
-def is_named_tuple(o: SupportedTypes) -> TypeIs[NamedTuple]:
+def is_named_tuple(o: object) -> TypeIs[NamedTuple]:
     return isinstance(o, tuple) and hasattr(o, "_asdict")
 
 

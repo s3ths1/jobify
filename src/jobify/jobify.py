@@ -105,11 +105,9 @@ class Plugin(Protocol):
 
     async def startup(self, app: Jobify) -> None:
         """Run plugin initialization when the application starts."""
-        ...
 
     async def shutdown(self) -> None:
         """Run plugin cleanup before the application shuts down."""
-        ...
 
 
 class Jobify(RootRouter):
@@ -307,7 +305,7 @@ class Jobify(RootRouter):
 
         logger.info("Jobify startup complete. Ready to schedule jobs.")
 
-    async def _restore_schedules(self) -> None:
+    async def _restore_schedules(self) -> None:  # noqa: C901
         """Restore schedules.
 
         Phase 1: Synchronize Declarative Cron Jobs (Code and Database)
@@ -331,18 +329,16 @@ class Jobify(RootRouter):
 
             if (sch_in_db := db_map.get(job_id)) is not None:
                 restored = self._restore_job_from_storage(sch_in_db)
-                if (
-                    restored is not None
-                    and (msg := restored[1])
-                    and isinstance(msg.trigger, CronArguments)
-                ):
-                    self._start_restored_job_in_memory(
-                        restored[0],
-                        msg.trigger,
-                        sch_in_db.next_run_at,
-                    )
-                    if msg.trigger.cron == cron_def:
-                        continue
+                if restored is not None:
+                    msg = restored[1]
+                    if isinstance(msg.trigger, CronArguments):
+                        self._start_restored_job_in_memory(
+                            restored[0],
+                            msg.trigger,
+                            sch_in_db.next_run_at,
+                        )
+                        if msg.trigger.cron == cron_def:
+                            continue
 
             await builder.cron(cron_def, job_id=job_id, replace=True, force=True)
 
