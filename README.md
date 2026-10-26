@@ -7,6 +7,7 @@
 <h1>Jobify</h1>
 <p><strong>Robust async task scheduler for Python.</strong></p>
 <p>Event-driven timing, typed APIs, persistence, routing, and queue-based backpressure.</p>
+<p><em>Extremely lightweight: uses only ~30MB of RAM in idle compared to ~300MB for Celery.</em></p>
 
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/jobify.svg)](https://pypi.org/project/jobify)
 [![PyPI version](https://badge.fury.io/py/jobify.svg)](https://pypi.python.org/pypi/jobify)
