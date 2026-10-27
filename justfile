@@ -19,7 +19,7 @@ init:
 [doc("Install pre-commit hooks")]
 [group("pre-commit")]
 _pre-commit *params:
-    uv run --frozen --no-dev --group lint prek {{ params }}
+    uv run --frozen --no-dev --group prek prek {{ params }}
 
 pre-commit-install:
     just _pre-commit install
@@ -49,7 +49,7 @@ _codespell:
 [doc("Check typos")]
 [group("linter")]
 typos: _codespell
-    just _setup_lint pre-commit run --all-files typos
+    uv run --no-dev --group prek --frozen prek run --all-files typos
 
 [doc("Linter run")]
 [group("linter")]
@@ -77,7 +77,7 @@ bandit:
 [doc("Semgrep check")]
 [group("static analysis")]
 semgrep:
-    just _setup_static semgrep scan --config auto --error src
+    uv run --no-dev --group prek --frozen prek run --all-files semgrep
 
 [doc("Zizmor check")]
 [group("static analysis")]

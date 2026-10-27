@@ -1,5 +1,8 @@
 fail_fast: true
 
+default_language_version:
+  python: python3.14
+
 default_install_hook_types:
   - pre-commit
   - commit-msg
@@ -45,6 +48,16 @@ repos:
     hooks:
       - id: detect-secrets
 
+  - repo: https://github.com/semgrep/pre-commit
+    rev: v1.182.1
+    hooks:
+      - id: semgrep
+        args: ["scan", "--config", "auto", "--error", "src"]
+        types: [python]
+        pass_filenames: false
+        require_serial: true
+        verbose: true
+
   - repo: local
     hooks:
       - id: lint
@@ -78,15 +91,6 @@ repos:
         name: bandit
         entry: just bandit
         language: python
-        types: [python]
-        require_serial: true
-        verbose: true
-        pass_filenames: false
-
-      - id: semgrep
-        name: semgrep
-        language: python
-        entry: just semgrep
         types: [python]
         require_serial: true
         verbose: true

@@ -55,12 +55,12 @@ fast = ["jobify[orjson,pydantic]"]
 
 [dependency-groups]
 optionals = ["jobify[cbor2,msgpack,orjson,pydantic]"]
+prek = ["prek==0.5.7"]
 lint = [
     "mypy==2.4.0",
     "ruff==0.17.2",
     "bandit==1.9.4",
     "zizmor==1.31.1",
-    "semgrep==1.182.0",
     "codespell==2.4.3",
     "ty==0.0.92",
     # mypy extensions
@@ -86,12 +86,12 @@ benchmarks = [
     "pytest-codspeed==5.0.3",
 ]
 dev = [
+    { include-group = "prek" },
     { include-group = "lint" },
     { include-group = "test" },
     { include-group = "docs" },
     { include-group = "benchmarks" },
     "detect-secrets==1.5.0",
-    "prek==0.5.7",
 ]
 
 [project.urls]
