@@ -2,6 +2,55 @@
 
 <!-- version list -->
 
+## v0.14.0 (2026-10-27)
+
+### Bug Fixes
+
+- **jobify**: Log full traceback when job restore fails
+  ([`6f881bc`](https://github.com/s3ths1/jobify/commit/6f881bc75d8d7927ad43a7a03ca52f9421f97a47))
+
+### Build System
+
+- **deps**: Bump the github-actions group across 1 directory with 3 updates
+  ([#130](https://github.com/s3ths1/jobify/pull/130),
+  [`0cf857b`](https://github.com/s3ths1/jobify/commit/0cf857bd08d6205f2575164125a537dd6ed4c7e5))
+
+- **deps**: Bump the github-actions group across 1 directory with 7 updates
+  ([#124](https://github.com/s3ths1/jobify/pull/124),
+  [`f28395e`](https://github.com/s3ths1/jobify/commit/f28395e42e0bba0cc498b0b36313079ec6329368))
+
+- **deps**: Bump the github-actions group with 6 updates
+  ([`4a782db`](https://github.com/s3ths1/jobify/commit/4a782db55eadeb796b89883b563b6cc4e4900ff8))
+
+- **deps**: Bump the github-actions group with 8 updates
+  ([`2d8ba5b`](https://github.com/s3ths1/jobify/commit/2d8ba5b6131623c37f52d4a7d56fc150dbea80d9))
+
+- **deps**: Bump the github-actions group with 9 updates
+  ([`0744f7d`](https://github.com/s3ths1/jobify/commit/0744f7d875e1582d5ae8c819198620fef17b47ab))
+
+- **deps**: Bump the pip group across 1 directory with 10 updates
+  ([`2cf4001`](https://github.com/s3ths1/jobify/commit/2cf4001ba6dcb63942459b53ac42ab0576d08acb))
+
+- **deps**: Bump the pip group with 14 updates
+  ([`bee84c8`](https://github.com/s3ths1/jobify/commit/bee84c8cee872e801e1730adc001f6624c4f8b5c))
+
+### Documentation
+
+- Add app attribute to context docstrings
+  ([`8a7329f`](https://github.com/s3ths1/jobify/commit/8a7329fd587414cca376d1ad389a844d56a3b123))
+
+- Document idle memory footprint
+  ([`1e16e33`](https://github.com/s3ths1/jobify/commit/1e16e33bb911d97b184139dcca5347a3dd1e9aaa))
+
+- Rename GitHub username to s3ths1
+  ([`769ec97`](https://github.com/s3ths1/jobify/commit/769ec9781a3505309dfe1488d88b5d718f429101))
+
+### Refactoring
+
+- Drop Python 3.10, move to 3.11+ idioms
+  ([`8901e6f`](https://github.com/s3ths1/jobify/commit/8901e6f6a7c0f65d7b0a3ad1b1fe73639dfbf80a))
+
+
 ## v0.13.0 (2026-06-07)
 
 ### Bug Fixes
