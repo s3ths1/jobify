@@ -1,6 +1,6 @@
 """CBOR serializer implementation using the cbor2 library."""
 
-import datetime
+import datetime as dt
 from collections.abc import Mapping
 from typing import TypeAlias
 
@@ -32,7 +32,7 @@ class CBORSerializer(Serializer):
         *,
         # Encoder options
         datetime_as_timestamp: bool = False,
-        timezone: datetime.tzinfo | None = None,
+        timezone: dt.tzinfo | None = None,
         value_sharing: bool = False,
         encoders: Mapping[type, "cbor2.EncoderHook"] | None = None,
         default: "cbor2.EncoderHook | None" = None,

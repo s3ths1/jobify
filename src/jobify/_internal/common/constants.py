@@ -1,4 +1,4 @@
-from enum import Enum, unique
+import enum
 from typing import Any, Final
 
 from typing_extensions import Sentinel
@@ -10,8 +10,8 @@ PATCH_FUNC_NAME: Final[str] = "__jobify_original"
 PATCH_CRON_DEF_ID: Final[str] = "__jobify_cron_definition"
 
 
-@unique
-class JobStatus(str, Enum):
+@enum.unique
+class JobStatus(enum.StrEnum):
     """The status of a job.
 
     Attributes:
@@ -36,8 +36,8 @@ class JobStatus(str, Enum):
     PERMANENTLY_FAILED = "permanently_failed"
 
 
-@unique
-class RunMode(str, Enum):
+@enum.unique
+class RunMode(enum.StrEnum):
     """The execution mode of a job.
 
     Attributes:

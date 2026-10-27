@@ -1,5 +1,5 @@
 import asyncio
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from functools import partial
 from typing import TYPE_CHECKING, Literal, cast
 from unittest.mock import AsyncMock
@@ -132,7 +132,7 @@ async def test_schedule_replace(
                 job_id=job_id, replace=True, force=True
             )
         else:
-            now = datetime.now(tz=timezone.utc)
+            now = datetime.now(tz=UTC)
             first_job = await builder.at(now + timedelta(1), job_id=job_id)
             first_handle = first_job._handle
             second_job = await builder.at(
@@ -182,7 +182,7 @@ async def test_schedule_with_none_handle(amock: AsyncMock) -> None:
 async def test_update_exists_job(amock: AsyncMock) -> None:
     app = create_app(0.001)
     f = app.task(amock)
-    start_date = datetime.now(timezone.utc) + timedelta(1)
+    start_date = datetime.now(UTC) + timedelta(1)
     async with app:
         job1 = await f.schedule().cron(
             Cron("* * * * *", start_date=start_date),

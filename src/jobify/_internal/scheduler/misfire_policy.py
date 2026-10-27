@@ -1,5 +1,5 @@
+import enum
 from datetime import datetime, timedelta
-from enum import Enum
 from typing import NamedTuple
 
 from typing_extensions import override
@@ -22,7 +22,7 @@ class GracePolicy(NamedTuple):
         return f"<{type(self).__name__} value={self.value}>"
 
 
-class MisfirePolicy(str, Enum):
+class MisfirePolicy(enum.StrEnum):
     """Policy for handling jobs that missed their scheduled run time.
 
     Attributes:

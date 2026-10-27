@@ -9,7 +9,7 @@ module-root = "src"
 name = "jobify"
 version = "0.13.0"
 description = "A modern, lightweight and robust task manager with a user-friendly interface and a wide range of features, using the low-level asyncio API and more."
-requires-python = ">=3.10,<3.15"
+requires-python = ">=3.11,<3.16"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
@@ -29,11 +29,12 @@ classifiers = [
     "Natural Language :: English",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
     "Topic :: Software Development :: Libraries :: Application Frameworks",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Utilities",
@@ -54,14 +55,11 @@ fast = ["jobify[orjson,pydantic]"]
 
 [dependency-groups]
 optionals = ["jobify[cbor2,msgpack,orjson,pydantic]"]
+prek = ["prek==0.5.7"]
 lint = [
-    "mypy==2.3.0",
-    "ruff==0.16.0",
-    "bandit==1.9.4",
-    "zizmor==1.28.0",
-    "semgrep==1.171.0",
-    "codespell==2.4.3",
-    "ty==0.0.78",
+    "ty==0.0.92",
+    "mypy==2.4.0",
+    "ruff==0.17.2",
     # mypy extensions
     "mypy-extensions==1.1.0",
     "types-python-crontab",
@@ -75,7 +73,7 @@ test = [
     "covdefaults>=2.3.0",
     "coverage[toml]==7.15.2",
     # integrations
-    "adaptix>=3.0.0b1,<4",
+    "adaptix>=3.0.0b12,<4",
     "uuid-utils",
 ]
 docs = ["zensical==0.0.51", "mkdocstrings[python]==1.0.6"]
@@ -85,12 +83,12 @@ benchmarks = [
     "pytest-codspeed==5.0.3",
 ]
 dev = [
+    { include-group = "prek" },
     { include-group = "lint" },
     { include-group = "test" },
     { include-group = "docs" },
     { include-group = "benchmarks" },
     "detect-secrets==1.5.0",
-    "prek==0.4.11",
 ]
 
 [project.urls]
@@ -141,7 +139,7 @@ omit = ["*/__init__.py", '*/types.py']
 
 # Static Analysis
 [tool.ty.environment]
-python-version = "3.10"
+python-version = "3.11"
 
 [tool.ty.src]
 include = ["src", "tests", "benchmarks", "examples"]
@@ -162,7 +160,7 @@ output-format = "concise"
 [tool.mypy]
 mypy_path = "src:examples/real_world/src"
 files = ["src", "tests", "benchmarks"]
-python_version = "3.10"
+python_version = "3.11"
 strict = true
 pretty = true
 warn_return_any = true
@@ -192,7 +190,7 @@ targets = "src"
 [tool.ruff]
 src = ["src"]
 include = ["src/**.py", "tests/**.py", "examples/**.py", "benchmarks/**.py"]
-target-version = "py310"
+target-version = "py311"
 line-length = 88
 fix = true
 
@@ -220,9 +218,6 @@ docstring-code-format = true
 [tool.ruff.lint.isort]
 known-first-party = ["src", "tests"]
 no-lines-before = ["local-folder"]
-
-[tool.codespell]
-skip = "*.pyi,*.pyc,./site,./docs/CHANGELOG.md"
 
 # Python Semantic Release
 [tool.semantic_release]

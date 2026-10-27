@@ -246,7 +246,7 @@ class RootRegistrator(Registrator[RootRoute[..., Any]]):
         functools.update_wrapper(route, func)
         self._routes[name] = route
 
-        if cron := options.get("cron"):
+        if (cron := options.get("cron")) is not None:
             if isinstance(cron, str):
                 cron = Cron(cron)
 

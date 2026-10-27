@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import asyncio
+import inspect
 from typing import TYPE_CHECKING, Any, cast
 
 from typing_extensions import override
@@ -30,7 +30,7 @@ class ExceptionMiddleware(BaseMiddleware):
             else:
                 raise
 
-            if asyncio.iscoroutinefunction(handler):
+            if inspect.iscoroutinefunction(handler):
                 return await handler(exc, context)
 
             loop = self.jobify_config.getloop()

@@ -1,6 +1,6 @@
 import asyncio
 import functools
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from typing import Any
 from unittest import mock
 from zoneinfo import ZoneInfo
@@ -109,7 +109,7 @@ async def test_cron_shutdown_graceful() -> None:
 
 
 def test_misfire_policy() -> None:
-    real_now = datetime.now(timezone.utc)
+    real_now = datetime.now(UTC)
     cron_parser = create_crontab("* * * * *")
     next_run_at = cron_parser.next_run(now=real_now - timedelta(days=7))
     handler = functools.partial(

@@ -26,7 +26,7 @@ class RetryMiddleware(BaseMiddleware):
         while True:
             try:
                 return await call_next(context)
-            except cfg.exclude_exceptions:  # noqa: PERF203
+            except cfg.exclude_exceptions:
                 raise
             except cfg.include_exceptions as exc:
                 attempt += 1

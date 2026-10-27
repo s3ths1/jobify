@@ -16,12 +16,11 @@ from typing import (
     Literal,
     ParamSpec,
     Protocol,
+    Self,
     TypeVar,
     runtime_checkable,
 )
 from zoneinfo import ZoneInfo
-
-from typing_extensions import Self
 
 from jobify._internal.common.constants import PATCH_CRON_DEF_ID, UNSET
 from jobify._internal.configuration import (
@@ -105,11 +104,9 @@ class Plugin(Protocol):
 
     async def startup(self, app: Jobify) -> None:
         """Run plugin initialization when the application starts."""
-        ...
 
     async def shutdown(self) -> None:
         """Run plugin cleanup before the application shuts down."""
-        ...
 
 
 class Jobify(RootRouter):
@@ -307,7 +304,7 @@ class Jobify(RootRouter):
 
         logger.info("Jobify startup complete. Ready to schedule jobs.")
 
-    async def _restore_schedules(self) -> None:
+    async def _restore_schedules(self) -> None:  # noqa: C901
         """Restore schedules.
 
         Phase 1: Synchronize Declarative Cron Jobs (Code and Database)
@@ -331,18 +328,16 @@ class Jobify(RootRouter):
 
             if (sch_in_db := db_map.get(job_id)) is not None:
                 restored = self._restore_job_from_storage(sch_in_db)
-                if (
-                    restored is not None
-                    and (msg := restored[1])
-                    and isinstance(msg.trigger, CronArguments)
-                ):
-                    self._start_restored_job_in_memory(
-                        restored[0],
-                        msg.trigger,
-                        sch_in_db.next_run_at,
-                    )
-                    if msg.trigger.cron == cron_def:
-                        continue
+                if restored is not None:
+                    msg = restored[1]
+                    if isinstance(msg.trigger, CronArguments):
+                        self._start_restored_job_in_memory(
+                            restored[0],
+                            msg.trigger,
+                            sch_in_db.next_run_at,
+                        )
+                        if msg.trigger.cron == cron_def:
+                            continue
 
             await builder.cron(cron_def, job_id=job_id, replace=True, force=True)
 
@@ -394,12 +389,12 @@ class Jobify(RootRouter):
                     param_type,
                 )
             bound = route.func_spec.signature.bind(**msg.arguments)
-        except (KeyError, TypeError, ValueError) as exc:
+        except (KeyError, TypeError, ValueError):
             logger.warning(
-                "Failed to restore job %s (%s). Reason: %s",
+                "Failed to restore job %s (%s).",
                 sch.job_id,
                 sch.name,
-                exc,
+                exc_info=True,
             )
             return None
         else:
@@ -515,7 +510,7 @@ class Jobify(RootRouter):
         for captured_signal in reversed(self._captured_signals):
             signal.raise_signal(captured_signal)
 
-    async def wait_all(self, timeout: float | None = None) -> None:
+    async def wait_all(self, timeout: float | None = None) -> None:  # noqa: ASYNC109
         """Wait for all currently scheduled jobs to complete.
 
         This method waits until all jobs currently registered have finished

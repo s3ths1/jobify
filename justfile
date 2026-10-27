@@ -1,112 +1,43 @@
 # Cross-platform shell configuration
 # Use PowerShell on Windows (higher precedence than shell setting)
-set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
-# Use sh on Unix-like systems
-set shell := ["sh", "-c"]
+[windows]
+set shell := ["powershell.exe", "-NoLogo", "-Command"]
 
 export VIRTUAL_ENV := ".venv"
+
+alias ta := test-all
+alias tca := test-coverage-all
+
+prek := "uv run --frozen --only-group prek prek"
+pytest := "uv run --frozen --only-group test pytest"
 
 [private]
 default:
     @just --list --unsorted --list-heading $'commands…\n'
 
-[doc("Prepare venv and repo for developing")]
-[group("Common")]
+# Sync the dev environment and install git hooks
 init:
     uv sync --group dev --all-extras
-    just _pre-commit install
+    {{ prek }} install
 
-# Pre-commit
-[doc("Install pre-commit hooks")]
-[group("pre-commit")]
-_pre-commit *params:
-    uv run --frozen --no-dev --group lint prek {{ params }}
+# Run hooks on all files (every hook when none are given)
+check *hooks:
+    {{ prek }} run --all-files --show-diff-on-failure --color=always {{ hooks }}
 
-pre-commit-install:
-    just _pre-commit install
+# Ruff format + check, spelling (codespell, typos)
+lint: (check "ruff-format" "ruff-check" "codespell" "typos")
 
-[doc("Pre-commit all files")]
-[group("pre-commit")]
-pre-commit-all:
-    just _pre-commit run --show-diff-on-failure --color=always --all-files
+# Mypy, ty, bandit, semgrep
+static-analysis: (check "mypy" "ty" "bandit" "semgrep")
 
-# Linter
-_setup_lint *params:
-    uv run --no-dev --group lint --frozen {{ params }}
+# Run tests
+test-all +args="tests/":
+    {{ pytest }} {{ args }}
 
-[doc("Ruff format")]
-[group("linter")]
-ruff-format *params:
-    just _setup_lint ruff format {{ params }}
+# Run tests with coverage
+test-coverage-all +args="tests/":
+    {{ pytest }} {{ args }} --cov --cov-context=test --cov-report=term:skip-covered
 
-[doc("Ruff check")]
-[group("linter")]
-ruff-check *params:
-    just _setup_lint ruff check --exit-non-zero-on-fix {{ params }}
-
-_codespell:
-    just _setup_lint codespell
-
-[doc("Check typos")]
-[group("linter")]
-typos: _codespell
-    just _setup_lint pre-commit run --all-files typos
-
-[doc("Linter run")]
-[group("linter")]
-linter: ruff-format ruff-check _codespell
-
-# Static analysis
-_setup_static *params:
-    uv run --frozen {{ params }}
-
-[doc("Mypy check")]
-[group("static analysis")]
-mypy *params:
-    just _setup_static mypy {{ params }}
-
-[doc("Ty check")]
-[group("static analysis")]
-ty *params:
-    just _setup_static ty check {{ params }}
-
-[doc("Bandit check")]
-[group("static analysis")]
-bandit:
-    just _setup_static bandit -c pyproject.toml -r src
-
-[doc("Semgrep check")]
-[group("static analysis")]
-semgrep:
-    just _setup_static semgrep scan --config auto --error src
-
-[doc("Zizmor check")]
-[group("static analysis")]
-zizmor:
-    just _setup_static zizmor .
-
-[doc("Static analysis check")]
-[group("static analysis")]
-static-analysis: mypy ty bandit semgrep
-
-# Tests
-_setup_test *params:
-    uv run --no-dev --group test --frozen pytest {{ params }}
-
-[doc("Run all tests")]
-[group("tests")]
-test-all +param="tests/":
-    just _setup_test {{ param }}
-
-[doc("Run all tests with coverage")]
-[group("tests")]
-test-coverage-all +param="tests/":
-    just _setup_test {{ param }} --cov --cov-context=test --cov-report=term:skip-covered
-
-alias ta := test-all
-alias tca := test-coverage-all
-
-[doc("Run benchmarks")]
-[group("benchmarks")]
+# Run benchmarks
 bench:
-    @uv run --no-dev --group benchmarks --frozen pytest benchmarks/ --codspeed
+    @uv run --frozen --no-dev --group benchmarks pytest benchmarks/ --codspeed
