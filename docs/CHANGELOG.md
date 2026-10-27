@@ -38,7 +38,7 @@
 
 ### Bug Fixes
 
-- Trigger worflow pypi
+- Trigger workflow pypi
   ([`909412d`](https://github.com/s3ths1/jobify/commit/909412d0752c4586ef3664e973903ea5e9e2afd4))
 
 

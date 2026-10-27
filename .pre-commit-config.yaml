@@ -3,11 +3,9 @@ fail_fast: true
 default_language_version:
   python: python3.14
 
-default_install_hook_types:
-  - pre-commit
-  - commit-msg
-
+default_install_hook_types: [pre-commit, commit-msg]
 default_stages: [pre-commit, pre-merge-commit, manual]
+
 repos:
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v4.4.0
@@ -43,6 +41,12 @@ repos:
       - id: typos
         exclude: ^docs/CHANGELOG\.md$
 
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.3
+    hooks:
+      - id: codespell
+        args: [--toml, pyproject.toml, --count, --skip, "*.pyi,*.pyc"]
+
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.5.0
     hooks:
@@ -58,49 +62,43 @@ repos:
         require_serial: true
         verbose: true
 
-  - repo: local
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.9.4
     hooks:
-      - id: lint
-        name: Linter
-        entry: just linter
-        language: python
-        types: [python]
-        require_serial: true
-        verbose: true
+      - id: bandit
+        args: ["-c", "pyproject.toml", "-r", "src"]
+        additional_dependencies: ["bandit[toml]"]
         pass_filenames: false
 
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.31.1
+    hooks:
+      - id: zizmor
+
+  - repo: local
+    hooks:
+      - id: ruff-format
+        name: ruff format
+        entry: uv run --frozen --only-group lint ruff format --force-exclude
+        language: system
+        types_or: [python, pyi]
+
+      - id: ruff-check
+        name: ruff check
+        entry: uv run --frozen --only-group lint ruff check --force-exclude --exit-non-zero-on-fix
+        language: system
+        types_or: [python, pyi]
+
       - id: mypy
-        name: Mypy
-        entry: just mypy
-        language: python
+        name: mypy
+        entry: uv run --frozen --only-group lint mypy
+        language: system
         types: [python]
-        require_serial: true
-        verbose: true
         pass_filenames: false
 
       - id: ty
-        name: Ty
-        entry: just ty
-        language: python
+        name: ty
+        entry: uv run --frozen --only-group lint ty check
+        language: system
         types: [python]
-        require_serial: true
-        verbose: true
-        pass_filenames: false
-
-      - id: bandit
-        name: bandit
-        entry: just bandit
-        language: python
-        types: [python]
-        require_serial: true
-        verbose: true
-        pass_filenames: false
-
-      - id: zizmor
-        name: zizmor
-        language: python
-        entry: just zizmor
-        files: ^\.github\/workflows\/
-        require_serial: true
-        verbose: true
         pass_filenames: false

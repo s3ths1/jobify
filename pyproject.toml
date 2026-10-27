@@ -57,12 +57,9 @@ fast = ["jobify[orjson,pydantic]"]
 optionals = ["jobify[cbor2,msgpack,orjson,pydantic]"]
 prek = ["prek==0.5.7"]
 lint = [
+    "ty==0.0.92",
     "mypy==2.4.0",
     "ruff==0.17.2",
-    "bandit==1.9.4",
-    "zizmor==1.31.1",
-    "codespell==2.4.3",
-    "ty==0.0.92",
     # mypy extensions
     "mypy-extensions==1.1.0",
     "types-python-crontab",
@@ -221,9 +218,6 @@ docstring-code-format = true
 [tool.ruff.lint.isort]
 known-first-party = ["src", "tests"]
 no-lines-before = ["local-folder"]
-
-[tool.codespell]
-skip = "*.pyi,*.pyc,./site,./docs/CHANGELOG.md"
 
 # Python Semantic Release
 [tool.semantic_release]
