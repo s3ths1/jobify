@@ -71,7 +71,7 @@ test = [
     "pytest-timeout>=2.4.0",
     "pytest-cov>=6.2.1",
     "covdefaults>=2.3.0",
-    "coverage[toml]==7.15.2",
+    "coverage[toml]==7.16.2",
     # integrations
     "adaptix>=3.0.0b12,<4",
     "uuid-utils",
