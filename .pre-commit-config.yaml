@@ -91,14 +91,14 @@ repos:
 
       - id: mypy
         name: mypy
-        entry: uv run --frozen --only-group lint mypy
+        entry: uv run --frozen mypy
         language: system
         types: [python]
         pass_filenames: false
 
       - id: ty
         name: ty
-        entry: uv run --frozen --only-group lint ty check
+        entry: uv run --frozen ty check
         language: system
         types: [python]
         pass_filenames: false

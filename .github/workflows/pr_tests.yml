@@ -36,9 +36,6 @@ jobs:
           enable-cache: true
           cache-dependency-glob: "uv.lock"
 
-      - name: Install the project
-        run: uv sync --locked --no-dev --group lint
-
       - uses: j178/prek-action@4e14d07f9231acabce116ccfca13b13dd9755ece # v3.0.0
         with:
           install-only: true
@@ -48,7 +45,7 @@ jobs:
           just-version: "1.59.0"
 
       - name: Execute Pre-Commit
-        run: just pre-commit-all
+        run: just check
 
   test-basic:
     if: github.event.pull_request.draft == false
@@ -70,9 +67,6 @@ jobs:
           python-version: ${{ matrix.py_version }}
           enable-cache: true
           cache-dependency-glob: "uv.lock"
-
-      - name: Install the project
-        run: uv sync --locked --no-dev --group test
 
       - uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 # v4.0.0
         with:
