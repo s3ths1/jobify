@@ -76,7 +76,7 @@ test = [
     "adaptix>=3.0.0b12,<4",
     "uuid-utils",
 ]
-docs = ["zensical==0.0.51", "mkdocstrings[python]==1.0.6"]
+docs = ["zensical==0.0.71", "mkdocstrings[python]==1.0.8"]
 benchmarks = [
     { include-group = "optionals" },
     { include-group = "test" },
