@@ -1,16 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc">
-  <title id="title">Jobify</title>
-  <desc id="desc">Three scheduled task lanes feed a single dispatch point.</desc>
-  <rect width="256" height="256" rx="58" fill="#101827"/>
-  <g fill="none" stroke="#E9EEF7" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M61 79H128"/>
-    <path d="M61 128H128"/>
-    <path d="M61 177H128"/>
-    <path d="M151 65V191"/>
-  </g>
-  <path d="M128 128H183" fill="none" stroke="#6C9BFF" stroke-width="13" stroke-linecap="round"/>
-  <path d="M183 109L202 128L183 147" fill="none" stroke="#6C9BFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="61" cy="79" r="6" fill="#101827" stroke="#E9EEF7" stroke-width="5"/>
-  <circle cx="61" cy="128" r="6" fill="#101827" stroke="#E9EEF7" stroke-width="5"/>
-  <circle cx="61" cy="177" r="6" fill="#101827" stroke="#E9EEF7" stroke-width="5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" width="720" height="180" role="img" aria-labelledby="title desc">
+  <title id="title">jobify</title>
+  <desc id="desc">The Jobify wordmark in a bold geometric sans-serif with a blue accent dot.</desc>
+  <text x="18" y="137" fill="#F7F9FC" font-family="Inter, ui-rounded, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="142" font-weight="800" letter-spacing="-7">jobify</text>
+  <circle cx="57" cy="29" r="13" fill="#3984F7"/>
 </svg>
