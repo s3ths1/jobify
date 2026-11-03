@@ -9,7 +9,6 @@ updates:
         patterns: ["*"]
     cooldown:
       default-days: 7
-      semver-major-days: 14
 
   - package-ecosystem: uv
     directory: /
@@ -21,4 +20,3 @@ updates:
         patterns: ["*"]
     cooldown:
       default-days: 7
-      semver-major-days: 14
