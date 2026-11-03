@@ -121,42 +121,94 @@ Jobify uses `asyncio.loop.call_at` instead of polling loops.
 
 ### Basic Usage
 
-```python linenums="1" hl_lines="11 16 24 27-29"
-import asyncio
-from datetime import datetime, timedelta
-from zoneinfo import ZoneInfo
+=== "wait for all jobs"
 
-from jobify import Jobify, Job
+    ```python linenums="1" hl_lines="31-32"
+    import asyncio
+    from datetime import datetime, timedelta
+    from zoneinfo import ZoneInfo
 
-UTC = ZoneInfo("UTC")
-app = Jobify(tz=UTC)
+    from jobify import Jobify, Job
 
-
-@app.task(cron="* * * * * * *")  # every second
-async def my_cron() -> None:
-    print("cron tick")
+    UTC = ZoneInfo("UTC")
+    app = Jobify(tz=UTC)
 
 
-@app.task
-def my_job(name: str) -> None:
-    now = datetime.now(tz=UTC)
-    print(f"Hello, {name}! at {now!r}")
+    @app.task(cron="* * * * * * *")  # every second
+    async def my_cron() -> None:
+        print("cron tick")
 
 
-async def main() -> None:
-    async with app:
-        await my_job.push("Alex")
-
-        run_next_day = datetime.now(tz=UTC) + timedelta(days=1)
-        job_at: Job = await my_job.schedule("Connor").at(run_next_day)
-        job_delay: Job = await my_job.schedule("Sara").delay(20)
-        job_cron: Job = await my_cron.schedule().cron("* * * * *", job_id="dynamic_cron_id")
-
-        await job_at.wait()
-        await job_delay.wait()
-        await job_cron.wait()
+    @app.task
+    def my_job(name: str) -> None:
+        now = datetime.now(tz=UTC)
+        print(f"Hello, {name}! at {now!r}")
 
 
-if __name__ == "__main__":
-    asyncio.run(main())
-```
+    async def main() -> None:
+        async with app:
+            await my_job.push("Alex")
+
+            run_next_day = datetime.now(tz=UTC) + timedelta(days=1)
+            job_at: Job = await my_job.schedule("Connor").at(run_next_day)
+            job_delay: Job = await my_job.schedule("Sara").delay(20)
+            job_cron: Job = await my_cron.schedule().cron("* * * * *", job_id="dynamic_cron_id")
+
+            # block until every scheduled job is done
+            await app.wait_all()
+
+
+    if __name__ == "__main__":
+        asyncio.run(main())
+    ```
+
+=== "wait for individual jobs"
+
+    ```python linenums="1" hl_lines="31-33"
+    import asyncio
+    from datetime import datetime, timedelta
+    from zoneinfo import ZoneInfo
+
+    from jobify import Jobify, Job
+
+    UTC = ZoneInfo("UTC")
+    app = Jobify(tz=UTC)
+
+
+    @app.task(cron="* * * * * * *")  # every second
+    async def my_cron() -> None:
+        print("cron tick")
+
+
+    @app.task
+    def my_job(name: str) -> None:
+        now = datetime.now(tz=UTC)
+        print(f"Hello, {name}! at {now!r}")
+
+
+    async def main() -> None:
+        async with app:
+            await my_job.push("Alex")
+
+            run_next_day = datetime.now(tz=UTC) + timedelta(days=1)
+            job_at: Job = await my_job.schedule("Connor").at(run_next_day)
+            job_delay: Job = await my_job.schedule("Sara").delay(20)
+            job_cron: Job = await my_cron.schedule().cron("* * * * *", job_id="dynamic_cron_id")
+
+            await job_at.wait()
+            await job_delay.wait()
+            await job_cron.wait()
+
+
+    if __name__ == "__main__":
+        asyncio.run(main())
+    ```
+
+### Waiting for jobs
+
+Jobify provides two ways to wait for job execution:
+
+* `#!python await job.wait()` - waits for a specific job to reach a terminal state.
+* `#!python await app.wait_all()` - wait until every scheduled job has finished (statuses SUCCESS, FAILED or TIMEOUT). The call returns as soon as the internal jobs registry becomes empty.
+
+This is the simplest way to keep your process alive until the background work is complete, eliminating the need for `#!python while True: sleep()` loops and manual result tracking.
