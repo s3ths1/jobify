@@ -89,9 +89,35 @@ Jobify uses `asyncio.loop.call_at` instead of polling loops.
 
 ### Installation
 
-```bash
-pip install jobify
-```
+=== "uv"
+
+    ```bash
+    # Standard installation
+    uv add jobify
+
+    # With high-performance dependencies (orjson, pydantic)
+    uv add "jobify[fast]"
+    ```
+
+=== "pip"
+
+    ```bash
+    # Standard installation
+    pip install jobify
+
+    # With high-performance dependencies (orjson, pydantic)
+    pip install "jobify[fast]"
+    ```
+
+=== "poetry"
+
+    ```bash
+    # Standard installation
+    poetry add jobify
+
+    # With high-performance dependencies (orjson, pydantic)
+    poetry add jobify -E fast
+    ```
 
 ### Basic Usage
 

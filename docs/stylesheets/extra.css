@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Jobify Modern Documentation Theme Enhancements
+   ========================================================================== */
+
+:root {
+  --jobify-radius-sm: 6px;
+  --jobify-radius-md: 10px;
+  --jobify-radius-lg: 14px;
+  --jobify-transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Layout container width - provide a comfortable, modern reading canvas */
+.md-grid {
+  max-width: 76rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..800;1,14..32,300..800&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Typography refinements - Inter */
+.md-typeset {
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  letter-spacing: -0.022em;
+  font-weight: 700;
+}
+
+.md-typeset h3,
+.md-typeset h4 {
+  letter-spacing: -0.012em;
+  font-weight: 600;
+}
+
+/* Modern Header with subtle blur */
+.md-header {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Feature Cards (grid cards) */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border-radius: var(--jobify-radius-lg);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  transition: var(--jobify-transition);
+  padding: 1.1rem 1.25rem;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  transform: translateY(-2px);
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.35), 0 0 15px rgba(20, 184, 166, 0.15);
+}
+
+/* Card Icons */
+.md-typeset .grid.cards .twemoji {
+  vertical-align: middle;
+  color: var(--md-primary-fg-color);
+}
+
+/* Admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: var(--jobify-radius-md);
+  border-width: 1px 1px 1px 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Tables - full width, crisp, no horizontal scrollbar */
+.md-typeset table:not([class]) {
+  display: table !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--jobify-radius-md);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.73rem;
+  margin: 1.5em 0;
+  overflow: visible !important;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.45rem 0.55rem !important;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  min-width: unset !important;
+  line-height: 1.45;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+  font-weight: 600;
+  border-top: none;
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background-color: rgba(20, 184, 166, 0.04);
+}
+
+/* Tabbed set styling */
+.md-typeset .tabbed-set {
+  border-radius: var(--jobify-radius-md);
+}
+
+/* Back-to-top button */
+.md-top {
+  border-radius: 50%;
+  transition: var(--jobify-transition);
+}
+
+.md-top:hover {
+  transform: translateY(-2px);
+}

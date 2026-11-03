@@ -64,17 +64,17 @@ This command will:
 
 We use several tools to ensure high code quality. You can run all of them using the `just` command:
 
-- **Linter**: Runs Ruff (format and check) and Codespell.
+- **Linter**: Runs Ruff (format and check), Codespell, and Typos.
   ```bash
-  just linter
+  just lint
   ```
-- **Static Analysis**: Runs Mypy, Basedpyright, Bandit, Semgrep, and Zizmor.
+- **Static Analysis**: Runs Mypy, Ty, Bandit, and Semgrep.
   ```bash
   just static-analysis
   ```
-- **Pre-commit**: It's recommended to run pre-commit on all files before pushing.
+- **Check All Hooks**: Run all configured pre-commit / prek hooks across all files.
   ```bash
-  just pre-commit-all
+  just check
   ```
 
 ### Testing

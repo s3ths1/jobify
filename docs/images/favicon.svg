@@ -1,11 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Jobify favicon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Jobify">
   <defs>
-    <linearGradient id="favGradient" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0ea5e9"/>
-      <stop offset="1" stop-color="#22c55e"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#10b981"/>
     </linearGradient>
   </defs>
-  <rect x="3" y="3" width="58" height="58" rx="15" fill="url(#favGradient)"/>
-  <rect x="3" y="3" width="58" height="58" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5"/>
-  <path d="M40 18V38C40 49 31 56 20 56H18" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Rounded square -->
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#bg)"/>
+  <!-- Clock rim -->
+  <circle cx="32" cy="30" r="18" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.2"/>
+  <!-- 4 main ticks -->
+  <line x1="32" y1="13" x2="32" y2="16.5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.9"/>
+  <line x1="50" y1="30" x2="46.5" y2="30" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.9"/>
+  <line x1="32" y1="48" x2="32" y2="44.5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.9"/>
+  <line x1="14" y1="30" x2="17.5" y2="30" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.9"/>
+  <!-- Hands -->
+  <line x1="32" y1="30" x2="40.5" y2="21.5" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-opacity="0.95"/>
+  <line x1="32" y1="30" x2="23.5" y2="21.5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.95"/>
+  <circle cx="32" cy="30" r="1.8" fill="#ffffff"/>
+  <!-- J letterform -->
+  <line x1="32" y1="31.5" x2="32" y2="42" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 32 42 Q 32 47 27 47 Q 22.5 47 22.5 43" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+  <line x1="29" y1="31.5" x2="35" y2="31.5" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round"/>
 </svg>
