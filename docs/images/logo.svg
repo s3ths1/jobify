@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc">
   <title id="title">Jobify</title>
-  <desc id="desc">A bold J monogram built from a task queue, with a bright trigger dot.</desc>
+  <desc id="desc">A precise J monogram with a scheduled event marker at its start.</desc>
 
-  <rect x="12" y="12" width="232" height="232" rx="52" fill="#111827"/>
+  <rect x="12" y="12" width="232" height="232" rx="52" fill="#101B2D"/>
 
-  <!-- Queued jobs resolve into one clear execution path. -->
-  <g fill="none" stroke="#F8FAFC" stroke-width="14" stroke-linecap="round">
-    <path d="M62 91H91"/>
-    <path d="M62 126H91"/>
-    <path d="M62 161H91"/>
-    <path d="M91 77H174V150C174 175 156 191 130 191H113"/>
-  </g>
+  <!-- One continuous J: a task is registered, then carried through execution. -->
+  <path d="M78 78H174V150C174 180 155 198 126 198C101 198 83 184 78 162"
+        fill="none"
+        stroke="#F4F7FB"
+        stroke-width="17"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
 
-  <!-- Trigger / scheduled event. -->
-  <circle cx="174" cy="77" r="10" fill="#A3E635"/>
-  <circle cx="174" cy="77" r="3" fill="#111827"/>
+  <!-- The event marker sits on the registration point, not as decoration. -->
+  <circle cx="174" cy="78" r="17" fill="#101B2D" stroke="#35D0B0" stroke-width="7"/>
+  <circle cx="174" cy="78" r="5" fill="#35D0B0"/>
 </svg>
