@@ -1,79 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Jobify Logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Jobify logo" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo4OTViOGY2Yy1iZWY5LTQxZGQtYjM1My1hNTM0OWNhZTg2ZTQAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaMTgrV5zK/cEXoezSChIiJUAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpmNDYxZGM1OS1lYjkwLTQ3MjAtYTQxOC1lOTIzZDU2OGYzOTRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoyAHDex68Sx8rwic/OTnMVQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggz0C2bs4TxrD0ytrTMiP/feVQAtaH1jnXrwO8013skzSkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaPvJxArxLE9D0THFOboY8DIAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCGhxumz/rc8e856nkFla85ZOA2gP6AJW6U+EMdgL1SsWRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi6Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjg5NWI4ZjZjLWJlZjktNDFkZC1iMzUzLWE1MzQ5Y2FlODZlNC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjYwNzAzNWI3LWExOWUtNGRmZC1hYjViLWIzNGI1ODFjZTkxOXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDPQLZuzhPGsPTK2tMyI/995VAC1ofWOdevA7zTXeyTNKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggl8RxdBguj8bN+v+6hk5zeAvd3eKrrndIxP4FefkJ1SqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg4aEMJNCgPIv+8vGaDusSLj0H/gbtr6o583/ckL7RFVx0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQKm6gA2fvlbEBkUBUTNc3X61+yRYPtsoHaxFhQKMPD9e25EqCXNCtXVznqBiveyKqrX7syYYfx1isgJOjaOjJ78=</c2pa:manifest></metadata>
   <defs>
-    <!-- Background gradient: cyan → emerald (top-left → bottom-right) -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#0ea5e9"/>
-      <stop offset="100%" stop-color="#10b981"/>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10262c"/>
+      <stop offset="1" stop-color="#08141a"/>
     </linearGradient>
-    <!-- Clock face subtle sheen -->
-    <radialGradient id="faceSheen" cx="42%" cy="38%" r="58%">
-      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    <radialGradient id="glow" cx="50%" cy="46%" r="55%">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
     </radialGradient>
-    <!-- Arc gradient (clock rim) -->
-    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3"/>
+    <linearGradient id="j" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#99f6e4"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
     </linearGradient>
-    <!-- Tick mark gradient -->
-    <linearGradient id="tickGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4"/>
-    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <!-- Rounded square base -->
-  <rect x="12" y="12" width="232" height="232" rx="56" fill="url(#bg)"/>
-  <!-- Inner highlight overlay -->
-  <rect x="12" y="12" width="232" height="232" rx="56" fill="url(#faceSheen)"/>
-  <!-- Subtle border -->
-  <rect x="13" y="13" width="230" height="230" rx="55" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2"/>
+  <!-- tile -->
+  <rect x="8" y="8" width="240" height="240" rx="60" fill="url(#tile)"/>
+  <rect x="8" y="8" width="240" height="240" rx="60" fill="url(#glow)"/>
+  <rect x="9" y="9" width="238" height="238" rx="59" fill="none" stroke="#5eead4" stroke-opacity=".18" stroke-width="2"/>
 
-  <!-- Clock rim (full circle, semi-transparent) -->
-  <circle cx="128" cy="122" r="74" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="3"/>
-
-  <!-- Clock ticks (12 ticks at every 30°) -->
-  <g stroke="url(#tickGrad)">
-    <!-- 12 o'clock -->
-    <line x1="128" y1="52" x2="128" y2="63" stroke-width="4" stroke-linecap="round"/>
-    <!-- 1 -->
-    <line x1="165" y1="59" x2="159.5" y2="68.5" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 2 -->
-    <line x1="194" y1="85" x2="187" y2="91" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 3 o'clock -->
-    <line x1="202" y1="122" x2="191" y2="122" stroke-width="4" stroke-linecap="round"/>
-    <!-- 4 -->
-    <line x1="194" y1="159" x2="187" y2="153" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 5 -->
-    <line x1="165" y1="185" x2="159.5" y2="175.5" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 6 o'clock -->
-    <line x1="128" y1="196" x2="128" y2="185" stroke-width="4" stroke-linecap="round"/>
-    <!-- 7 -->
-    <line x1="91"  y1="185" x2="96.5" y2="175.5" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 8 -->
-    <line x1="62"  y1="159" x2="69"  y2="153" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 9 o'clock -->
-    <line x1="54"  y1="122" x2="65"  y2="122" stroke-width="4" stroke-linecap="round"/>
-    <!-- 10 -->
-    <line x1="62"  y1="85" x2="69"  y2="91" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 11 -->
-    <line x1="91"  y1="59" x2="96.5" y2="68.5" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+  <!-- timer arc: fades in towards the head, counting up to the trigger -->
+  <g fill="none" stroke-width="12" stroke-linecap="butt">
+    <path d="M212.12 110.12 A86 86 0 0 1 213.32 117.20" stroke="#1d5a5c"/>
+    <path d="M213.18 116.15 A86 86 0 0 1 213.87 123.30" stroke="#1e5b5d"/>
+    <path d="M213.81 122.25 A86 86 0 0 1 213.99 129.43" stroke="#1e5d5e"/>
+    <path d="M214.00 128.38 A86 86 0 0 1 213.67 135.55" stroke="#1f5e5f"/>
+    <path d="M213.75 134.50 A86 86 0 0 1 212.91 141.63" stroke="#1f5f60"/>
+    <path d="M213.07 140.59 A86 86 0 0 1 211.73 147.64" stroke="#206161"/>
+    <path d="M211.96 146.61 A86 86 0 0 1 210.12 153.55" stroke="#216263"/>
+    <path d="M210.42 152.55 A86 86 0 0 1 208.09 159.33" stroke="#216464"/>
+    <path d="M208.47 158.35 A86 86 0 0 1 205.65 164.96" stroke="#226565"/>
+    <path d="M206.10 164.00 A86 86 0 0 1 202.83 170.39" stroke="#236767"/>
+    <path d="M203.34 169.47 A86 86 0 0 1 199.62 175.61" stroke="#236868"/>
+    <path d="M200.19 174.73 A86 86 0 0 1 196.05 180.59" stroke="#246a69"/>
+    <path d="M196.68 179.76 A86 86 0 0 1 192.13 185.30" stroke="#256c6b"/>
+    <path d="M192.82 184.52 A86 86 0 0 1 187.88 189.72" stroke="#266d6c"/>
+    <path d="M188.63 188.99 A86 86 0 0 1 183.34 193.83" stroke="#276f6e"/>
+    <path d="M184.14 193.15 A86 86 0 0 1 178.51 197.60" stroke="#27716f"/>
+    <path d="M179.36 196.98 A86 86 0 0 1 173.42 201.02" stroke="#287370"/>
+    <path d="M174.31 200.46 A86 86 0 0 1 168.11 204.07" stroke="#297472"/>
+    <path d="M169.04 203.58 A86 86 0 0 1 162.59 206.74" stroke="#2a7673"/>
+    <path d="M163.55 206.31 A86 86 0 0 1 156.90 209.00" stroke="#2b7875"/>
+    <path d="M157.88 208.64 A86 86 0 0 1 151.05 210.85" stroke="#2b7a77"/>
+    <path d="M152.07 210.56 A86 86 0 0 1 145.10 212.28" stroke="#2c7c78"/>
+    <path d="M146.13 212.07 A86 86 0 0 1 139.05 213.29" stroke="#2d7e7a"/>
+    <path d="M140.09 213.15 A86 86 0 0 1 132.95 213.86" stroke="#2e807b"/>
+    <path d="M134.00 213.79 A86 86 0 0 1 126.82 213.99" stroke="#2f817d"/>
+    <path d="M127.87 214.00 A86 86 0 0 1 120.70 213.69" stroke="#30837f"/>
+    <path d="M121.75 213.77 A86 86 0 0 1 114.62 212.95" stroke="#318580"/>
+    <path d="M115.66 213.11 A86 86 0 0 1 108.61 211.78" stroke="#318782"/>
+    <path d="M109.63 212.02 A86 86 0 0 1 102.69 210.19" stroke="#328983"/>
+    <path d="M103.69 210.49 A86 86 0 0 1 96.90 208.18" stroke="#338b85"/>
+    <path d="M97.88 208.55 A86 86 0 0 1 91.27 205.76" stroke="#348d87"/>
+    <path d="M92.22 206.20 A86 86 0 0 1 85.83 202.95" stroke="#358f88"/>
+    <path d="M86.74 203.46 A86 86 0 0 1 80.60 199.76" stroke="#36918a"/>
+    <path d="M81.48 200.33 A86 86 0 0 1 75.61 196.20" stroke="#37938c"/>
+    <path d="M76.44 196.83 A86 86 0 0 1 70.88 192.29" stroke="#38968e"/>
+    <path d="M71.67 192.99 A86 86 0 0 1 66.45 188.06" stroke="#39988f"/>
+    <path d="M67.19 188.81 A86 86 0 0 1 62.33 183.53" stroke="#3a9a91"/>
+    <path d="M63.01 184.33 A86 86 0 0 1 58.54 178.71" stroke="#3b9c93"/>
+    <path d="M59.17 179.56 A86 86 0 0 1 55.11 173.64" stroke="#3c9e95"/>
+    <path d="M55.67 174.52 A86 86 0 0 1 52.04 168.33" stroke="#3da096"/>
+    <path d="M52.54 169.26 A86 86 0 0 1 49.36 162.82" stroke="#3ea298"/>
+    <path d="M49.80 163.78 A86 86 0 0 1 47.08 157.13" stroke="#3fa49a"/>
+    <path d="M47.45 158.12 A86 86 0 0 1 45.22 151.30" stroke="#40a69c"/>
+    <path d="M45.51 152.31 A86 86 0 0 1 43.77 145.34" stroke="#41a99e"/>
+    <path d="M43.98 146.37 A86 86 0 0 1 42.75 139.30" stroke="#41ab9f"/>
+    <path d="M42.89 140.34 A86 86 0 0 1 42.16 133.20" stroke="#42ada1"/>
+    <path d="M42.23 134.25 A86 86 0 0 1 42.00 127.07" stroke="#43afa3"/>
+    <path d="M42.00 128.13 A86 86 0 0 1 42.29 120.95" stroke="#44b1a5"/>
+    <path d="M42.21 122.00 A86 86 0 0 1 43.01 114.87" stroke="#45b4a7"/>
+    <path d="M42.85 115.91 A86 86 0 0 1 44.16 108.85" stroke="#46b6a9"/>
+    <path d="M43.93 109.87 A86 86 0 0 1 45.74 102.93" stroke="#47b8aa"/>
+    <path d="M45.44 103.93 A86 86 0 0 1 47.73 97.13" stroke="#48baac"/>
+    <path d="M47.36 98.12 A86 86 0 0 1 50.13 91.50" stroke="#49bdae"/>
+    <path d="M49.69 92.45 A86 86 0 0 1 52.93 86.04" stroke="#4bbfb0"/>
+    <path d="M52.42 86.96 A86 86 0 0 1 56.11 80.80" stroke="#4cc1b2"/>
+    <path d="M55.54 81.69 A86 86 0 0 1 59.65 75.81" stroke="#4dc3b4"/>
+    <path d="M59.02 76.64 A86 86 0 0 1 63.54 71.07" stroke="#4ec6b6"/>
+    <path d="M62.85 71.86 A86 86 0 0 1 67.76 66.63" stroke="#4fc8b8"/>
+    <path d="M67.01 67.37 A86 86 0 0 1 72.28 62.49" stroke="#50caba"/>
+    <path d="M71.48 63.18 A86 86 0 0 1 77.09 58.69" stroke="#51cdbb"/>
+    <path d="M76.24 59.32 A86 86 0 0 1 82.15 55.24" stroke="#52cfbd"/>
+    <path d="M81.27 55.81 A86 86 0 0 1 87.45 52.16" stroke="#53d1bf"/>
+    <path d="M86.53 52.66 A86 86 0 0 1 92.95 49.47" stroke="#54d4c1"/>
+    <path d="M92.00 49.90 A86 86 0 0 1 98.63 47.17" stroke="#55d6c3"/>
+    <path d="M97.65 47.53 A86 86 0 0 1 104.46 45.28" stroke="#56d8c5"/>
+    <path d="M103.45 45.58 A86 86 0 0 1 110.41 43.82" stroke="#57dbc7"/>
+    <path d="M109.39 44.04 A86 86 0 0 1 116.45 42.78" stroke="#58ddc9"/>
+    <path d="M115.41 42.93 A86 86 0 0 1 122.55 42.17" stroke="#59dfcb"/>
+    <path d="M121.50 42.25 A86 86 0 0 1 128.68 42.00" stroke="#5ae2cd"/>
+    <path d="M127.62 42.00 A86 86 0 0 1 134.80 42.27" stroke="#5be4cf"/>
+    <path d="M133.75 42.19 A86 86 0 0 1 140.88 42.97" stroke="#5ce6d1"/>
+    <path d="M139.85 42.82 A86 86 0 0 1 145.88 43.88" stroke="#5de9d3"/>
   </g>
+  <circle cx="212.12" cy="110.12" r="6.0" fill="#1d5a5c"/>
+  <circle cx="145.88" cy="43.88" r="6.0" fill="#5eead4"/>
 
-  <!-- Clock hands pointing to ~10:10 (classic watch pose) -->
-  <!-- Minute hand → 2 o'clock position (60°) -->
-  <line x1="128" y1="122" x2="162" y2="83" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-opacity="0.95"/>
-  <!-- Hour hand → 10 o'clock position (300°) -->
-  <line x1="128" y1="122" x2="94"  y2="83" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-opacity="0.95"/>
-  <!-- Center pivot -->
-  <circle cx="128" cy="122" r="6" fill="#ffffff"/>
+  <!-- J -->
+  <path d="M143 80 V146 C143 168 130 180 113 180 C98 180 89 171 87 158" fill="none" stroke="url(#j)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Bold J letterform integrated below center -->
-  <!--  Stem: vertical from center down -->
-  <line x1="128" y1="126" x2="128" y2="166" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
-  <!--  Hook: curved bottom turning left -->
-  <path d="M 128 166 Q 128 186 108 186 Q 90 186 90 170"
-        fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-  <!--  Serif top bar of J -->
-  <line x1="116" y1="126" x2="140" y2="126" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <!-- the trigger: fires exactly at call_at -->
+  <circle cx="188.81" cy="67.19" r="26" fill="url(#halo)"/>
+  <circle cx="188.81" cy="67.19" r="11" fill="#fbbf24"/>
+  <circle cx="185.81" cy="64.19" r="3.6" fill="#fff" fill-opacity=".55"/>
 </svg>

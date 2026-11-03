@@ -80,6 +80,7 @@ Jobify uses `asyncio.loop.call_at` instead of polling loops.
 1. **Efficiency:** No idle CPU usage when nothing is scheduled.
 2. **Precision:** Sub-millisecond timing without polling jitter.
 3. **Native behavior:** Works with OS event-notification primitives.
+4. **Lightweight:** Extremely lightweight, consuming ~30 MB of RAM in idle.
 
 !!! note "Precision vs Polling Trade-off"
     Event-driven scheduling is sensitive to significant system clock shifts.
