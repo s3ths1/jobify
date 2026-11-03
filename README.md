@@ -5,21 +5,35 @@
 </a>
 
 <h1>Jobify</h1>
-<p><strong>Robust async task scheduler for Python.</strong></p>
-<p>Event-driven timing, typed APIs, persistence, routing, and queue-based backpressure.</p>
-<p><em>Extremely lightweight: uses only ~30MB of RAM in idle compared to ~300MB for Celery.</em></p>
 
-[![Supported Python versions](https://img.shields.io/pypi/pyversions/jobify.svg)](https://pypi.org/project/jobify)
-[![PyPI version](https://badge.fury.io/py/jobify.svg)](https://pypi.python.org/pypi/jobify)
-[![Tests](https://github.com/s3ths1/jobify/actions/workflows/pr_tests.yml/badge.svg)](https://github.com/s3ths1/jobify/actions/workflows/pr_tests.yml)
-[![Coverage](https://coverage-badge.samuelcolvin.workers.dev/s3ths1/jobify.svg)](https://coverage-badge.samuelcolvin.workers.dev/redirect/s3ths1/jobify)
-[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://codspeed.io/s3ths1/jobify?utm_source=badge)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<h3>Robust async task scheduler for Python.</h3>
 
-[**Documentation**](https://s3ths1.github.io/jobify/) •
-[**Quick Start**](#quick-start) •
-[**Community Extensions**](https://github.com/Jobify-Community) •
-[**Telegram**](https://t.me/jobify_community)
+<p>
+  ⚡ Event-driven timers &nbsp;·&nbsp; 🕒 Cron with seconds &nbsp;·&nbsp; 💾 SQLite persistence
+  <br>
+  🔀 FastAPI-style routing &nbsp;·&nbsp; 🚦 Queue backpressure &nbsp;·&nbsp; 🧩 Typed APIs
+</p>
+
+<p>No polling loops. Extremely lightweight: uses only <strong>~30MB</strong> of RAM in idle compared to ~300MB for Celery.</p>
+
+<p>
+  <a href="https://pypi.org/project/jobify"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fpypi.org%2Fpypi%2Fjobify%2Fjson&query=%24.info.version&variant=outline&font=geist&size=xs&mode=dark&logo=python&logoColor=3776AB&label=PyPI"><img alt="PyPI version" src="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fpypi.org%2Fpypi%2Fjobify%2Fjson&query=%24.info.version&variant=outline&font=geist&size=xs&mode=light&logo=python&logoColor=3776AB&label=PyPI"></picture></a>
+  <a href="https://pypi.org/project/jobify"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/Python-3.11%2B.svg?variant=outline&font=geist&size=xs&mode=dark&logo=python&logoColor=3776AB"><img alt="Python 3.11+" src="https://shieldcn.dev/badge/Python-3.11%2B.svg?variant=outline&font=geist&size=xs&mode=light&logo=python&logoColor=3776AB"></picture></a>
+  <a href="https://github.com/s3ths1/jobify/blob/main/LICENSE"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/github/s3ths1/jobify/license.svg?variant=outline&font=geist&size=xs&mode=dark"><img alt="License: MIT" src="https://shieldcn.dev/github/s3ths1/jobify/license.svg?variant=outline&font=geist&size=xs&mode=light"></picture></a>
+<br>
+  <a href="https://github.com/s3ths1/jobify/actions/workflows/pr_tests.yml"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/github/ci/s3ths1/jobify.svg?workflow=pr_tests.yml&branch=main&variant=outline&font=geist&size=xs&mode=dark&label=Tests"><img alt="Tests" src="https://shieldcn.dev/github/ci/s3ths1/jobify.svg?workflow=pr_tests.yml&branch=main&variant=outline&font=geist&size=xs&mode=light&label=Tests"></picture></a>
+  <a href="https://github.com/s3ths1/jobify/actions/workflows/pr_codeql.yml"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/github/ci/s3ths1/jobify.svg?workflow=pr_codeql.yml&branch=main&variant=outline&font=geist&size=xs&mode=dark&label=CodeQL"><img alt="CodeQL" src="https://shieldcn.dev/github/ci/s3ths1/jobify.svg?workflow=pr_codeql.yml&branch=main&variant=outline&font=geist&size=xs&mode=light&label=CodeQL"></picture></a>
+  <a href="https://github.com/s3ths1/jobify/actions/workflows/pr_dependency_review.yml"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/github/ci/s3ths1/jobify.svg?workflow=pr_dependency_review.yml&variant=outline&font=geist&size=xs&mode=dark&label=Dependency+Review"><img alt="Dependency Review" src="https://shieldcn.dev/github/ci/s3ths1/jobify.svg?workflow=pr_dependency_review.yml&variant=outline&font=geist&size=xs&mode=light&label=Dependency+Review"></picture></a>
+  <a href="https://codspeed.io/s3ths1/jobify?utm_source=badge"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/CodSpeed-benchmarked.svg?variant=outline&font=geist&size=xs&mode=dark"><img alt="CodSpeed" src="https://shieldcn.dev/badge/CodSpeed-benchmarked.svg?variant=outline&font=geist&size=xs&mode=light"></picture></a>
+  <a href="https://t.me/jobify_community"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/Telegram-Join%20chat.svg?variant=outline&font=geist&size=xs&mode=dark&logo=telegram&logoColor=24A1DE"><img alt="Telegram" src="https://shieldcn.dev/badge/Telegram-Join%20chat.svg?variant=outline&font=geist&size=xs&mode=light&logo=telegram&logoColor=24A1DE"></picture></a>
+<br>
+  <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/s3ths1/jobify"><img alt="Coverage" src="https://coverage-badge.samuelcolvin.workers.dev/s3ths1/jobify.svg"></a>
+</p>
+
+[Documentation](https://s3ths1.github.io/jobify/) ·
+[Quick Start](#quick-start) ·
+[Comparison](https://s3ths1.github.io/jobify/#comparison) ·
+[Community Extensions](https://github.com/Jobify-Community)
 
 </div>
 
