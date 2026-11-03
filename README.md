@@ -69,7 +69,6 @@ async def main() -> None:
         job: Job = await hello.push("Alex")
         await job.wait()
 
-
 if __name__ == "__main__":
     asyncio.run(main())
 ```
@@ -77,7 +76,7 @@ if __name__ == "__main__":
 <details>
 <summary>Extended example (cron, delay, absolute time)</summary>
 
-```python
+```python linenums="1" hl_lines="31-32"
 import asyncio
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
@@ -105,17 +104,25 @@ async def main() -> None:
 
         run_next_day = datetime.now(tz=UTC) + timedelta(days=1)
         job_at: Job = await my_job.schedule("Connor").at(run_next_day)
-        job_delay: Job = await my_job.schedule("Sara").delay(seconds=20)
+        job_delay: Job = await my_job.schedule("Sara").delay(20)
         job_cron: Job = await my_cron.schedule().cron("* * * * *", job_id="dynamic_cron_id")
 
-        await job_at.wait()
-        await job_delay.wait()
-        await job_cron.wait()
+        # block until every scheduled job is done
+        await app.wait_all()
 
 
 if __name__ == "__main__":
     asyncio.run(main())
 ```
+
+### Waiting for jobs
+
+Jobify provides two ways to wait for job execution:
+
+* `await job.wait()` - waits for a specific job to reach a terminal state.
+* `await app.wait_all()` - wait until every scheduled job has finished (statuses SUCCESS, FAILED or TIMEOUT). The call returns as soon as the internal jobs registry becomes empty.
+
+This is the simplest way to keep your process alive until the background work is complete, eliminating the need for `while True: sleep()` loops and manual result tracking.
 
 </details>
 
