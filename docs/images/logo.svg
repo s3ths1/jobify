@@ -1,18 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc">
   <title id="title">Jobify</title>
-  <desc id="desc">A precise J monogram with a scheduled event marker at its start.</desc>
-
-  <rect x="12" y="12" width="232" height="232" rx="52" fill="#101B2D"/>
-
-  <!-- One continuous J: a task is registered, then carried through execution. -->
-  <path d="M78 78H174V150C174 180 155 198 126 198C101 198 83 184 78 162"
-        fill="none"
-        stroke="#F4F7FB"
-        stroke-width="17"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
-
-  <!-- The event marker sits on the registration point, not as decoration. -->
-  <circle cx="174" cy="78" r="17" fill="#101B2D" stroke="#35D0B0" stroke-width="7"/>
-  <circle cx="174" cy="78" r="5" fill="#35D0B0"/>
+  <desc id="desc">Three scheduled task lanes feed a single dispatch point.</desc>
+  <rect width="256" height="256" rx="58" fill="#101827"/>
+  <g fill="none" stroke="#E9EEF7" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M61 79H128"/>
+    <path d="M61 128H128"/>
+    <path d="M61 177H128"/>
+    <path d="M151 65V191"/>
+  </g>
+  <path d="M128 128H183" fill="none" stroke="#6C9BFF" stroke-width="13" stroke-linecap="round"/>
+  <path d="M183 109L202 128L183 147" fill="none" stroke="#6C9BFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="61" cy="79" r="6" fill="#101827" stroke="#E9EEF7" stroke-width="5"/>
+  <circle cx="61" cy="128" r="6" fill="#101827" stroke="#E9EEF7" stroke-width="5"/>
+  <circle cx="61" cy="177" r="6" fill="#101827" stroke="#E9EEF7" stroke-width="5"/>
 </svg>
