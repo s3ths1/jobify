@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://s3ths1.github.io/jobify/">
-  <img src="https://raw.githubusercontent.com/s3ths1/jobify/main/docs/images/logo.svg" alt="Jobify logo" width="140">
+  <img src="https://raw.githubusercontent.com/s3ths1/jobify/main/docs/images/logo.svg" alt="Jobify logo" width="210">
 </a>
 
 <h1>Jobify</h1>
