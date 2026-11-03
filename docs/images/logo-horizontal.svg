@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 144" width="560" height="144" role="img" aria-labelledby="title desc">
+  <title id="title">Jobify — async task scheduler</title>
+  <desc id="desc">Jobify wordmark paired with a symbol of scheduled task lanes converging at a dispatch point.</desc>
+  <g transform="translate(4 4) scale(.53)">
+    <rect width="256" height="256" rx="58" fill="#101827"/>
+    <g fill="none" stroke="#E9EEF7" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M61 79H128"/>
+      <path d="M61 128H128"/>
+      <path d="M61 177H128"/>
+      <path d="M151 65V191"/>
+    </g>
+    <path d="M128 128H183" fill="none" stroke="#6C9BFF" stroke-width="13" stroke-linecap="round"/>
+    <path d="M183 109L202 128L183 147" fill="none" stroke="#6C9BFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="61" cy="79" r="6" fill="#101827" stroke="#E9EEF7" stroke-width="5"/>
+    <circle cx="61" cy="128" r="6" fill="#101827" stroke="#E9EEF7" stroke-width="5"/>
+    <circle cx="61" cy="177" r="6" fill="#101827" stroke="#E9EEF7" stroke-width="5"/>
+  </g>
+  <text x="158" y="88" fill="#101827" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="64" font-weight="750" letter-spacing="-3">jobify</text>
+  <text x="162" y="116" fill="#667085" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="650" letter-spacing="2.2">ASYNC TASK SCHEDULER</text>
+</svg>
