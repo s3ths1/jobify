@@ -1,79 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Jobify Logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc">
+  <title id="title">Jobify</title>
+  <desc id="desc">A geometric J mark framed by an orbit, representing precise event-driven job scheduling.</desc>
   <defs>
-    <!-- Background gradient: cyan → emerald (top-left → bottom-right) -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#0ea5e9"/>
-      <stop offset="100%" stop-color="#10b981"/>
+    <linearGradient id="accent" x1="54" y1="190" x2="202" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#568BFF"/>
     </linearGradient>
-    <!-- Clock face subtle sheen -->
-    <radialGradient id="faceSheen" cx="42%" cy="38%" r="58%">
-      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Arc gradient (clock rim) -->
-    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3"/>
-    </linearGradient>
-    <!-- Tick mark gradient -->
-    <linearGradient id="tickGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4"/>
+    <linearGradient id="surface" x1="28" y1="20" x2="228" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#172943"/>
+      <stop offset="1" stop-color="#0B1425"/>
     </linearGradient>
   </defs>
 
-  <!-- Rounded square base -->
-  <rect x="12" y="12" width="232" height="232" rx="56" fill="url(#bg)"/>
-  <!-- Inner highlight overlay -->
-  <rect x="12" y="12" width="232" height="232" rx="56" fill="url(#faceSheen)"/>
-  <!-- Subtle border -->
-  <rect x="13" y="13" width="230" height="230" rx="55" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2"/>
+  <rect x="12" y="12" width="232" height="232" rx="58" fill="url(#surface)"/>
+  <rect x="12.75" y="12.75" width="230.5" height="230.5" rx="57.25" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="1.5"/>
 
-  <!-- Clock rim (full circle, semi-transparent) -->
-  <circle cx="128" cy="122" r="74" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="3"/>
+  <!-- Quiet orbit: a nod to precise, event-driven timing. -->
+  <circle cx="128" cy="128" r="78" fill="none" stroke="#A8C4E8" stroke-opacity=".12" stroke-width="2"/>
+  <path d="M57.7 161.8A78 78 0 0 1 179.2 59.4" fill="none" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="179.2" cy="59.4" r="6.5" fill="#22D3EE"/>
+  <circle cx="179.2" cy="59.4" r="11" fill="#22D3EE" fill-opacity=".12"/>
 
-  <!-- Clock ticks (12 ticks at every 30°) -->
-  <g stroke="url(#tickGrad)">
-    <!-- 12 o'clock -->
-    <line x1="128" y1="52" x2="128" y2="63" stroke-width="4" stroke-linecap="round"/>
-    <!-- 1 -->
-    <line x1="165" y1="59" x2="159.5" y2="68.5" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 2 -->
-    <line x1="194" y1="85" x2="187" y2="91" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 3 o'clock -->
-    <line x1="202" y1="122" x2="191" y2="122" stroke-width="4" stroke-linecap="round"/>
-    <!-- 4 -->
-    <line x1="194" y1="159" x2="187" y2="153" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 5 -->
-    <line x1="165" y1="185" x2="159.5" y2="175.5" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 6 o'clock -->
-    <line x1="128" y1="196" x2="128" y2="185" stroke-width="4" stroke-linecap="round"/>
-    <!-- 7 -->
-    <line x1="91"  y1="185" x2="96.5" y2="175.5" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 8 -->
-    <line x1="62"  y1="159" x2="69"  y2="153" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 9 o'clock -->
-    <line x1="54"  y1="122" x2="65"  y2="122" stroke-width="4" stroke-linecap="round"/>
-    <!-- 10 -->
-    <line x1="62"  y1="85" x2="69"  y2="91" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-    <!-- 11 -->
-    <line x1="91"  y1="59" x2="96.5" y2="68.5" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
-  </g>
-
-  <!-- Clock hands pointing to ~10:10 (classic watch pose) -->
-  <!-- Minute hand → 2 o'clock position (60°) -->
-  <line x1="128" y1="122" x2="162" y2="83" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-opacity="0.95"/>
-  <!-- Hour hand → 10 o'clock position (300°) -->
-  <line x1="128" y1="122" x2="94"  y2="83" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-opacity="0.95"/>
-  <!-- Center pivot -->
-  <circle cx="128" cy="122" r="6" fill="#ffffff"/>
-
-  <!-- Bold J letterform integrated below center -->
-  <!--  Stem: vertical from center down -->
-  <line x1="128" y1="126" x2="128" y2="166" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
-  <!--  Hook: curved bottom turning left -->
-  <path d="M 128 166 Q 128 186 108 186 Q 90 186 90 170"
-        fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-  <!--  Serif top bar of J -->
-  <line x1="116" y1="126" x2="140" y2="126" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <!-- Custom geometric J. -->
+  <path d="M88 91H169" fill="none" stroke="url(#accent)" stroke-width="13" stroke-linecap="round"/>
+  <path d="M148 91V151C148 176 133 190 109 190C91 190 77 181 69 165"
+        fill="none" stroke="#F7FAFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
