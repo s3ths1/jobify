@@ -1,28 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc">
   <title id="title">Jobify</title>
-  <desc id="desc">A geometric J mark framed by an orbit, representing precise event-driven job scheduling.</desc>
-  <defs>
-    <linearGradient id="accent" x1="54" y1="190" x2="202" y2="54" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#568BFF"/>
-    </linearGradient>
-    <linearGradient id="surface" x1="28" y1="20" x2="228" y2="236" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#172943"/>
-      <stop offset="1" stop-color="#0B1425"/>
-    </linearGradient>
-  </defs>
+  <desc id="desc">A bold J monogram built from a task queue, with a bright trigger dot.</desc>
 
-  <rect x="12" y="12" width="232" height="232" rx="58" fill="url(#surface)"/>
-  <rect x="12.75" y="12.75" width="230.5" height="230.5" rx="57.25" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="1.5"/>
+  <rect x="12" y="12" width="232" height="232" rx="52" fill="#111827"/>
 
-  <!-- Quiet orbit: a nod to precise, event-driven timing. -->
-  <circle cx="128" cy="128" r="78" fill="none" stroke="#A8C4E8" stroke-opacity=".12" stroke-width="2"/>
-  <path d="M57.7 161.8A78 78 0 0 1 179.2 59.4" fill="none" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="179.2" cy="59.4" r="6.5" fill="#22D3EE"/>
-  <circle cx="179.2" cy="59.4" r="11" fill="#22D3EE" fill-opacity=".12"/>
+  <!-- Queued jobs resolve into one clear execution path. -->
+  <g fill="none" stroke="#F8FAFC" stroke-width="14" stroke-linecap="round">
+    <path d="M62 91H91"/>
+    <path d="M62 126H91"/>
+    <path d="M62 161H91"/>
+    <path d="M91 77H174V150C174 175 156 191 130 191H113"/>
+  </g>
 
-  <!-- Custom geometric J. -->
-  <path d="M88 91H169" fill="none" stroke="url(#accent)" stroke-width="13" stroke-linecap="round"/>
-  <path d="M148 91V151C148 176 133 190 109 190C91 190 77 181 69 165"
-        fill="none" stroke="#F7FAFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Trigger / scheduled event. -->
+  <circle cx="174" cy="77" r="10" fill="#A3E635"/>
+  <circle cx="174" cy="77" r="3" fill="#111827"/>
 </svg>
