@@ -6,15 +6,15 @@
 
 <h1>Jobify</h1>
 
-<h3>Robust async task scheduler for Python.</h3>
+<h3>Event-loop-driven job scheduler for Python.</h3>
 
 <p>
-  ⚡ Event-driven timers &nbsp;·&nbsp; 🕒 Cron with seconds &nbsp;·&nbsp; 💾 SQLite persistence
-  <br>
-  🔀 FastAPI-style routing &nbsp;·&nbsp; 🚦 Queue backpressure &nbsp;·&nbsp; 🧩 Typed APIs
+  Schedule jobs to run immediately, after a delay, at a specific time,
+  or on a cron schedule - with second-level precision.
+  No polling loops. SQLite persistence built in.
 </p>
 
-<p>No polling loops. Extremely lightweight: uses only <strong>~30MB</strong> of RAM in idle compared to ~300MB for Celery.</p>
+<p>Uses just <strong>~30 MB of RAM at idle</strong>.</p>
 
 <p>
   <a href="https://pypi.org/project/jobify"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fpypi.org%2Fpypi%2Fjobify%2Fjson&query=%24.info.version&variant=outline&font=geist&size=xs&mode=dark&logo=python&logoColor=3776AB&label=PyPI"><img alt="PyPI version" src="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fpypi.org%2Fpypi%2Fjobify%2Fjson&query=%24.info.version&variant=outline&font=geist&size=xs&mode=light&logo=python&logoColor=3776AB&label=PyPI"></picture></a>
